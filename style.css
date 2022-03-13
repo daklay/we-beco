@@ -575,7 +575,7 @@ body{
 /* ##############################categories section###################################### */
 .aboutus{
     background-color: var(--primary);
-    height: 500px;
+    height: 450px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -588,6 +588,12 @@ body{
     /* background-color: aquamarine; */
     display: flex;
     width: 1000px;
+    height: 290px;
+}
+.videodiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .textdiv h2{
     font-size:30px;
@@ -643,6 +649,21 @@ body{
     border-color: var(--color);
     transition: ease-out 0.4s;
 }
+
+
+@media screen and (max-width: 1087px){
+    .insideaboutus{
+        width: 900px;
+        height: 250px;
+    }
+    .insideaboutus video{
+        width: 450px ;
+    }
+    .aboutus{
+        height: 400px;
+    }
+}
+
 /* ##############################spacer###################################### */
 .thespacer{
     height: 500px;
