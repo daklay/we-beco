@@ -38,8 +38,23 @@
     padding: 0px 10px 0px 30px;
 }
 .navlist ul a{
+    position: relative;
+    padding: 0px 1px;
     text-decoration:none;
     color: #191A18;
+}
+.navlist a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--secondary);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navlist a:hover::after{
+    width: 100%;
 }
 /* ##############################promobar###################################### */
 .promo{
