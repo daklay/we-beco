@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8579b38148.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/favicon.png" >
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/index.css">
     <title>OrdiShop - Maroc</title>
 </head>
 <body>
@@ -18,14 +18,14 @@
             </div>
             <div class="navlist">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Nos ordinateurs</a></li>
-                    <li><a href="#">Nos coffrets</a></li>
-                    <li><a href="#">Nos fournisseurs</a></li>
-                    <li><a href="#">Qui sommes-nous</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Nos ordinateurs.html">Nos ordinateurs</a></li>
+                    <li><a href="Nos coffrets.html">Nos coffrets</a></li>
+                    <li><a href="Nous fournisseurs.html">Nos fournisseurs</a></li>
+                    <li><a href="Qui sommes-nous.html">Qui sommes-nous</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="espace client.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="panier.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
 
                 </ul>
             </div>
@@ -114,6 +114,49 @@
             </div>
         </div>
     </div>
+    <!-- product section -->
+    <div class="productallcontainer">
+        <div class="productdflex">
+            <div class="producthead">
+                <h2>New products</h2>
+                <p>this is the subtitle</p>
+            </div>
+            <div class="productcontainer">
+                <div class="divo">
+                    <div class="img">
+                        <img src="images/new1.png" alt="err" width="80%" onmouseover="whover(this);"/>
+                    </div>
+                    <div><p class="categoriepro">categories</p></div>
+                    <div><p>Dell Latitude 3520 Laptop, 15.6" HD Display, Intel Core i5-1135G7 ...</p></div>
+                    <div><h3 class="pricepro">7000 DH</h3></div>
+                </div>
+                <div class="divo">
+                    <div class="img">
+                        <img src="images/new5.png" alt="err" width="80%">
+                    </div>
+                    <div><p class="categoriepro">categories</p></div>
+                    <div><p>Dell Latitude 3520 Laptop, 15.6" HD Display, Intel Core i5-1135G7 ...</p></div>
+                    <div><h3 class="pricepro">7000 DH</h3></div>
+                </div>
+                <div class="divo">
+                    <div class="img">
+                        <img src="images/new3.png" alt="err" width="80%">
+                    </div>
+                    <div><p class="categoriepro">categories</p></div>
+                    <div><p>Dell Latitude 3520 Laptop, 15.6" HD Display, Intel Core i5-1135G7 ...</p></div>
+                    <div><h3 class="pricepro">7000 DH</h3></div>
+                </div>
+                <div class="divo">
+                    <div class="img">
+                        <img src="images/new4.png" alt="err" width="80%">
+                    </div>
+                    <div><p class="categoriepro">categories</p></div>
+                    <div><p>Dell Latitude 3520 Laptop, 15.6" HD Display, Intel Core i5-1135G7 ...</p></div>
+                    <div><h3 class="pricepro">7000 DH</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- about us section -->
     <div class="aboutus">
         <div class="insideaboutus">
@@ -131,8 +174,45 @@
             </div>
         </div>
     </div>
+    <!-- our brands section -->
+    <div class="brandscontainer">
+        <div class="brandsall">
+            <div class="ourbrands">
+                <div><h3>OUR BRANDS</h3></div>
+            </div>
+            <div class="brandsimg">
+                <div><img src="images/brands/1.png" alt="err" width="100%"></div>
+                <div><img src="images/brands/2.png" alt="err" width="100%"></div>
+                <div><img src="images/brands/3.png" alt="err" width="95%"></div>
+                <div><img src="images/brands/1.png" alt="err" width="100%"></div>
+                <div><img src="images/brands/4.png" alt="err" width="60%"></div>
+                <div><img src="images/brands/5.png" alt="err" width="100%"></div>
+            </div>
+        </div>
+    </div>
     <!-- spacer -->
-    <div class="thespacer"></div>
+    <!-- <div class="thespacer"></div> -->
+    <!-- newsletter -->
+    <div class="newslettercontainer">
+        <div class="newsletterall">
+            <div class="leftside">
+                <div class="text">
+                    <h2>Subscribe to our Newsletter Example</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem libero sunt dolorem itaque, recusandae architecto totam animi iure quos fuga.</p>
+                </div>
+                <div class="formnewsletter">
+                    <form action="">
+                        <input type="email" placeholder="Your email">
+                        <button>Subscribe</button>  
+                    </form>
+                </div>
+                
+            </div>
+            <div class="rightside">
+                <img src="images/newsletterimg.png" alt="err" height="100%">
+            </div>
+        </div>
+    </div>
     <!-- footer -->
     <div class="footer">
         <div class="footermenu">
@@ -185,5 +265,7 @@
             </div>
         </div>
     </div>
+    
+    <script src="js/home.js"></script>
 </body>
 </html>
