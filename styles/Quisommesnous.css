@@ -1,0 +1,329 @@
+:root{
+    --primary: #FFFFFF;
+    --secondary: #9E121B;
+    --tertiary: #F3F3F3;
+    --color: #191A18;
+    
+}
+.footer{
+    background-color: var(--tertiary);
+}
+/* ##############################spacer###################################### */
+.thespacer{
+    height: 500px;
+    /* background: var(--tertiary); */
+    background-color: var(--primary);
+}
+/* ###################### herosection ############################## */
+.herosectionpc{
+    background-color: var(--tertiary);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 5% 0;
+    background: url(/images/background1.jpg);
+    /* background: url(/images/background2.jpg); */
+    /* background: url(/images/background3.jpg); */
+    background-repeat:no-repeat;
+    background-position: 50% 30%;
+    background-size: cover;
+    filter: grayscale(70%);
+}
+/* ###################### content section ############################## */
+
+.container_quisommenous{
+    min-height: 500px;
+    background-color: var(--primary);
+    padding: 50px 64px;
+}
+.quisommenous_header h1{
+    font-size: 40px;
+}
+.quisommenous_header p{
+    line-height: 30px;
+}
+.storycontainer .section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.storycontainer .section:not(.test){
+    /* background-color: rgb(150, 97, 97); */
+    padding-right: 60px;
+}
+.storycontainer .section:nth-child(3){
+    /* background-color: red; */
+    padding-left: 50px;
+}
+/* image div */
+.storycontainer .section .imgdiv{
+    height: 200px; 
+    width: 37%;
+    background-color: red;
+}
+.storycontainer .section .img1{
+    background: url(/images/quisommenous/conferenceroom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    /* filter: drop-shadow(3px 3px 10px rgb(204, 204, 204)); */
+    border-radius: 3px;
+}
+.storycontainer .section .img2{
+    background: url(/images/quisommenous/helpcenter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    /* filter: drop-shadow(3px 3px 10px rgb(204, 204, 204)); */
+    border-radius: 3px;
+}
+.storycontainer .section .img3{
+    background: url(/images/quisommenous/office-work.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    /* filter: drop-shadow(3px 3px 10px rgb(204, 204, 204)); */
+    border-radius: 3px;
+}
+/* div */
+.storycontainer .section .parag{
+    width: 50%;
+    /* background-color: rgb(46, 24, 172); */
+}
+.storycontainer .section .parag p{
+    line-height: 25px;
+}
+.storycontainer .section .parag h2{
+    line-height: 35px;
+    font-weight: 100;
+    font-size: 30px;
+    padding-bottom: 7px;
+}
+.storycontainer .title{
+    color: gray;
+    font-size: 20px;
+}
+.storycontainer{
+    /* background-color: red; */
+    padding: 60px 100px;
+}
+
+
+@media screen and (max-width: 1279px){
+    .container_quisommenous{
+        padding: 40px 40px;
+    }
+    .storycontainer{
+        padding: 50px 100px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .container_quisommenous{
+        padding: 30px 30px;
+    }
+    .storycontainer{
+        padding: 40px 70px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container_quisommenous{
+        padding: 30px 16px;
+    }
+    .storycontainer{
+        padding: 40px 30px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .container_quisommenous{
+        padding: 60px 172px;
+    }
+    .storycontainer{
+        padding: 70px 100px;
+    }
+}
+
+/* ###################### timeline section ############################## */
+
+.timelinecontainer{
+    height: 400px;
+    background-color:var(--tertiary);
+    padding: 0 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insidetimelinecontainer{
+    height: 200px;
+    display: flex;
+    width: 1030px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .timelinecontainer .datetimeline,
+.timelinecontainer .iconcercle,
+.timelinecontainer .textetimeline
+{
+    background-color: rgb(82, 110, 110);
+} */
+.timelinecontainer .datetimeline ul{
+    display: flex;
+    justify-content: space-between;
+}
+.datetimeline p{
+    font-size:xx-large;
+}
+.timelinecontainer .iconcercle ul{
+    display: flex;
+    justify-content: space-between;
+}
+.iconcercle ul div{
+    height: 30px;
+    width: 30px;
+    background-color: var(--color);
+    border: 5px solid var(--tertiary);
+    border-radius: 30px;
+    position: relative;
+}
+.iconcercle ul::before{
+    content: '';
+    position:absolute;
+    height: 4px;
+    width: 99%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--secondary);
+}
+.iconcercle{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+.datetimeline{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.timelinecontainer .textetimeline ul{
+    display: flex;
+    justify-content: space-between;
+}
+.timelinecontainer .textetimeline p{
+    width: 150px;
+    text-transform:uppercase;
+    /* background-color: #9E121B; */
+    text-align: center;
+}
+
+.timelinecontainer ul{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1279px){
+    .timelinecontainer{
+        padding: 0 40px;
+    }
+    .storycontainer{
+        padding: 0 100px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .timelinecontainer{
+        padding: 0 30px;
+    }
+    .storycontainer{
+        padding: 40px 70px;
+    }
+}
+@media screen and (max-width: 768px){
+    .timelinecontainer{
+        padding: 0 16px;
+    }
+    .storycontainer{
+        padding: 40px 30px;
+    }
+}
+@media screen and (min-width: 1440px){
+    .timelinecontainer{
+        padding: 0 172px;
+    }
+    .storycontainer{
+        padding: 70px 100px;
+    }
+}
+
+
+
+/* ##############################newsletter section ###################################### */
+.newslettercontainer{
+    background-color: var(--primary);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletterall{
+    height: 250px;
+    width: 1000px;
+    /* background-color: aquamarine; */
+    display: flex;
+}
+.newsletterall .rightside{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.newsletterall .leftside{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .newsletterall .leftside .formnewsletter{
+    display: flex;
+    flex-direction: column;
+} */
+.leftside .text h2{
+    font-size: 40px ;
+}
+.formnewsletter form{
+    display: flex;
+    justify-content: space-between;
+}
+.formnewsletter button{
+    text-decoration: none;
+    font-size: 20px;
+    /* font-size: clamp(20px, 2.5vw, 22px); */
+    /* line-height: 30px; */
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: var(--tertiary);
+    transition: ease-in 0.2s;
+}  
+.formnewsletter button:hover{
+    background-color: var(--tertiary);
+    color: var(--black);
+    border: 1px solid var(--secondary);
+    border-color: var(--color);
+    transition: ease-out 0.4s;
+}
+.formnewsletter form input{
+    width: 73%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.formnewsletter form button{
+    width: 25%;
+}
+.formnewsletter ::placeholder {
+    color: #9E121B;
+    opacity: 1; /* Firefox */
+    padding-left: 15px;
+}

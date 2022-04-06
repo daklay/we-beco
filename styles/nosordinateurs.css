@@ -1,0 +1,304 @@
+:root{
+    --primary: #FFFFFF;
+    --secondary: #9E121B;
+    --tertiary: #F3F3F3;
+    --color: #191A18;
+    
+}
+/* ##############################spacer###################################### */
+.thespacer{
+    height: 500px;
+    /* background: var(--tertiary); */
+    background-color: #9E121B;
+}
+
+.footer{
+    background-color: var(--tertiary);
+}
+
+/* ###################### herosection ############################## */
+.herosectionpc{
+    background-color: var(--tertiary);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: url(/images/pcgamer2.jpg);
+    background-repeat:no-repeat;
+    background-position: 50%;
+    background-size: cover; */
+}
+/* .textheropccontainer{
+    background-color: var(--secondary);
+} */
+.textheropccontainer h1{
+    font-size: clamp(32px, 5vw, 100px);
+    /* font-size: 100px; */
+    padding: 0 20%;
+    letter-spacing: .2rem;
+}
+.textheropccontainer h1:first-child{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width:1px ;
+}
+/* ###################### product filter ############################## */
+.productsectionall{
+    display: flex;
+    height: 1100px;
+    margin: 50px 0;
+}
+.productfilter{
+    /* background-color: rgb(19, 138, 98); */
+    width: calc(20% - 0.5px);
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 40px;
+}
+
+.productarchivedivider{
+    width: 2px;
+    background-color: silver;
+}
+.productfilter .filtertxt{
+    font-size: 24px;
+}
+.productfilter .fromupto{
+    display: flex;
+    justify-content: space-between;
+}
+.productfilter .fromupto div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 9px 5px;
+    background-color: var(--tertiary);
+    border-radius: 5px;
+}
+.productfilter .fromupto input{
+    width: 55px;
+    text-align: center;
+    border: none;
+}
+.filterslide .range{
+    width: 100%;
+    height: 5px;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 200px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    background-size: 70% 100%;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--tertiary);
+    box-shadow: 0 0 2px 0 #555;
+}
+
+.productfilter .checkboxopt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+    /* margin-left: 6px; */
+}
+.checkboxopt, .brandoption{
+    margin-left: 6px;
+    margin-bottom: 4px;
+}
+.productfilter .checkboxopt label{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+    padding-top: 3px;
+}
+.productfilter .checkboxopt input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.productfilter .checkboxopt .checknew{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 23px;
+    width: 23px;
+    background-color: var(--tertiary);
+}
+.checkboxopt label:hover ~ .checknew{
+    background-color: #9E121B;
+}
+.checkboxopt input:checked ~ .checknew{
+    background-color: #9E121B;
+}
+.checknew::after{
+    content:"";
+    position: absolute;
+    display: none;
+}
+.checkboxopt input:checked ~ .checknew::after{
+    display: block;
+}
+.checkboxopt label .checknew::after{
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+
+
+.brandoption .brandline div{
+    width: 100px;
+    height: 50px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary);
+    border: 2px solid var(--tertiary);
+    border-radius: 6px;
+}
+.brandoption .brandline1 div:first-child{
+    width: 53%;
+}
+.brandoption .brandline1 div{
+    width: 47%;
+}
+.brandoption .brnd div:first-child{
+    width: 47%;
+}
+.brandoption .brnd div{
+    width: 53%;
+}
+.productfilter .brandoption .brandline{
+    display: flex;
+}
+
+.filterbtn div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.filterbtn button{
+    font-size: 20px;
+    line-height: 30px;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    padding: 5px 25px;
+    color: var(--tertiary);
+    transition: ease-in 0.2s;
+}
+.filterbtn button:hover{
+    background-color: var(--tertiary);
+    color: var(--black);
+    border: 1px solid var(--secondary);
+    border-color: var(--color);
+    transition: ease-out 0.4s;
+}
+.filterbtn i{
+    padding: 13px 13px;
+    background-color:var(--tertiary);
+    border-radius: 30px;
+    color: black;
+    transition: ease-in 0.2s;
+}
+.filterbtn i:hover{
+    padding: 13px 13px;
+    background-color:gray;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    transition: ease-out 0.4s;
+}
+.productthemslf{
+    /* background-color: aqua; */
+    width: calc(80% - 0.5px);
+    height: 700px;
+    /* background-color: var(--primary); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.productdflex{
+    /* background-color: rgb(148, 105, 105); */
+    width: 100%;
+}
+.producthead{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding-bottom: 15px;
+}
+.productcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 310px;
+    width: 100%;
+    /* background-color: #dd1111; */
+    margin-bottom: 50px;
+}
+.divo .img{
+    background-color: var(--tertiary);
+    /* background-color: aquamarine; */
+    border-radius: 8px;
+    height: 200px;
+}
+/* .divo img{
+    
+} */
+/* ATTENTION */
+.divo div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: coral; */
+}
+/* .divo p{
+    padding-left: 10px;
+} */
+.divo .categoriepro{
+    width: 100%;
+    color: gray;
+    font-size: 14px;
+}
+.divo .pricepro{
+    width: 100%;
+    color: var(--secondary);
+    font-size:x-large;
+}
+.productcontainer .divo{
+    /* background-color: rgb(207, 136, 85); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* width: 300px; */
+    width: 280px;
+    height: 300px;
+}
+
+
+
+@media screen and (min-width: 1440px){
+    .productallcontainer{
+        padding: 0px 172px;
+    }
+}

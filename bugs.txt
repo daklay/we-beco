@@ -1,0 +1,16 @@
+- js product section (Home) hover img and cart  icon
+- (home) hero section product slide 
+- colors (all)
+- icon after (Menu)
+- promo btn 
+- our brands section slide (Home)
+- lang (fr/ar)
+- categories style color (Home)
+- range slide (nos ordi)
+- products rating icons (nos ordi)
+- (general) loading icon
+- (nos ordi) filter brand checkbox
+- (nos ordi) hero section background
+to know about -webkit
+- hero section (home) shape in background
+- (qui somme nous) header height and title size scale
