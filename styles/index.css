@@ -268,7 +268,29 @@ body{
     padding-left: 172px;
     padding-right: 90px;
     /* padding right 64*/
+    background: url(/images/herosectionback.png);
+    background-repeat: no-repeat;
+    background-size:55%;
+    background-position: 115% 76%;
     background-color:var(--tertiary);
+    position: relative;
+}
+.languagedropdown{
+    /* background-color: var(--color); */
+    background-color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    width: 75px;
+    position: absolute;
+    top: 630px;
+    left: 0;
+    border-radius: 0px 5px 5px 0px;
+}
+.languagedropdown i{
+    transform: rotate(180deg);
+    color: white;
 }
 .herotext{
     width: 40%;
