@@ -65,6 +65,7 @@
     background-color: #ffffff;
     height: 800px;
     padding: 0 172px;
+    position: relative;
 }
 .containercontactus .calltoactionform{
     /* background-color: #be6e6e; */
@@ -93,7 +94,7 @@
     height: 460px;
 }
 .contactusform{
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 700px;
     height: 700px;
     display: flex;
@@ -101,23 +102,32 @@
     /* justify-content: center; */
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 25px 0px;
+    position: absolute;
+    right: 172px;
+    top: -108px;
 }
 .contactusform .formheader{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
     background-color: #f0f0f0;
     width: 100%;
+    height: 120px;
     padding: 20px 20px;
 }
 .contactusform .icon{
     height: 50px;
     width: 50px;
-    background-color: #717171;
-    border: #717171;
+    background-color: #c4c4c4;
+    border: #c4c4c4;
     border-radius: 5px;
 }
 .contactusform .textformheader{
-    width: 500px;
+    width: 600px;
+    padding: 0 25px;
+}
+.contactusform .textformheader p{
+    font-size: 20px;
 }
 .contactusform form{
     background-color: #ffffff;
