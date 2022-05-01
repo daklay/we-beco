@@ -268,10 +268,10 @@ body{
     padding-left: 172px;
     padding-right: 90px;
     /* padding right 64*/
-    background: url(/images/herosectionback.png);
+    /* background: url(/images/herosectionback.png);
     background-repeat: no-repeat;
     background-size:55%;
-    background-position: 115% 76%;
+    background-position: 115% 76%; */
     background-color:var(--tertiary);
     position: relative;
 }
