@@ -16,9 +16,9 @@
     box-sizing: border-box;
 }
 .cardcontainerall{
-    background-color: #3c5027;
+    background-color: #00000070;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     height: 100vh;
 }
 .cardcontainer{
@@ -53,7 +53,33 @@
 }
 .cardcontainer .cardbody{
     height: 900px;
-    background-color: rgb(123, 179, 179);
+    /* background-color: rgb(123, 179, 179); */
+}
+.cardbody .start{
+    padding-top: 15px;
+}
+.cardbody .start p:first-child{
+    padding-bottom: 5px;
+}
+.cardbody .center{
+    padding-top: 15px;
+}
+.cardbody .center i{
+    color: gray;
+    font-size: 13px;
+    padding: 3px;
+}
+.center .delet i{
+    padding-top: 5px;
+    color: gray;
+}
+.cardbody .amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardbody .amount p{
+    color: rgb(99, 98, 98);
 }
 .cardcontainer .cardfooter{
     min-height: 140px;
@@ -73,20 +99,27 @@
 }
 .cardbody .productslist li{
     display: flex;
-    background-color: #3c5027;
+    /* background-color: #3c5027; */
     justify-content: space-between;
     height: 120px;
+    border-bottom: 1px solid gray;
 }
 .cardheader .x{
     display: flex;
     justify-content: space-between;
+}
+.cardbody .center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 150px;
 }
 .cardbody .productslist li .end{
     display: flex;
     align-items: center;
     justify-content: end;
     /* background-color: #9E121B; */
-    width: 120px;
+    width: 100px;
 }
 .btncheckoutcard{
     padding-top: 20px;
