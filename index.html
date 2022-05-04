@@ -7,12 +7,58 @@
     <script src="https://kit.fontawesome.com/8579b38148.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/favicon.png" >
     <link rel="stylesheet" href="styles/template.css">
+    <script src="js/cart.js" defer></script>
     <link rel="stylesheet" href="styles/index.css">
     <title>OrdiShop - Maroc</title>
 </head>
 <body>
+    <!-- cart -->
+    <div id="cart" class="cardcontainerall">
+        <div class="cardcontainer">
+            <div class="cardheader">
+                <div class="x">
+                    <h2>Cart(3)</h2>
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <p>Free Shipping, 30 Days Return, 1 Year Warranty</p>
+                <!-- <div class="divider"></div> -->
+            </div>
+            <div class="cardbody">
+                <ul class="productslist">
+                    <li>
+                        <div class="start ">
+                            <p>Product description</p>
+                            <p>9,000.00 Dh</p>
+                        </div>
+                        <div class="center">
+                            <div class="amount">
+                                <i class="fa-solid fa-plus"></i>
+                                <p>5</p>
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="delet">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="end">
+                            <img src="/images/pcbureau1.jpg" alt="err" style="height: 100px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cardfooter">
+                <div class="total">
+                    <p>Subtotal</p>
+                    <p>4,000.00 Dh</p>
+                </div>
+                <div class="btncheckoutcard">
+                    <a href="#" >Procced To Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- header -->
-    <nav class="header">
+    <nav id="header" class="header">
         <nav class="navbar">
             <div class="logo1">
                 <a href="#"><img src="images/LOGOPNG-24.png" alt="navlogo" width="87.5" height="43.75"></a>
@@ -26,7 +72,7 @@
                     <li><a href="Qui sommes-nous.html">Qui sommes-nous</a></li>
                     <li><a href="Blog.html">Blog</a></li>
                     <li><a class="width0" href="espace client.html"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a class="width0" href="panier.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                    <li id="carticon"><a class="width0"><i class="fa-solid fa-basket-shopping"></i></a></li>
 
                 </ul>
             </div>
