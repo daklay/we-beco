@@ -283,9 +283,12 @@ body{
     justify-content: space-around;
     height: 40px;
     width: 75px;
-    position: absolute;
+    /* position: absolute;
     top: 630px;
+    left: 0; */
+    position: fixed;
     left: 0;
+    bottom: 130px;
     border-radius: 0px 5px 5px 0px;
 }
 .languagedropdown i{
@@ -678,7 +681,7 @@ body{
     background-color: var(--secondary);
     border: 1px solid var(--secondary);
     border-radius: 30px;
-    padding: 12px 48px;
+    padding: 9px 40px;
     color: var(--tertiary);
     transition: ease-in 0.2s;
 }
@@ -773,7 +776,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     /* align-items: center; */
-    width: 300px;
+    width: 280px;
     height: 300px;
 }
 
