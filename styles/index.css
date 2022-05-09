@@ -619,7 +619,7 @@ body{
 /* ##############################aboutus section###################################### */
 .aboutus{
     background-color: var(--tertiary);
-    height: 450px;
+    height: 500px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -827,7 +827,7 @@ body{
     /* background-color: brown; */
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .brandsimg div{
@@ -847,7 +847,7 @@ body{
 /* ##############################newsletter section ###################################### */
 .newslettercontainer{
     background-color: var(--tertiary);
-    height: 450px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
