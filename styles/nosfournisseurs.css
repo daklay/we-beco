@@ -88,6 +88,11 @@
     text-align: center;
     color: #9E121B;
 }
+.card1 .back p{
+    color: #191A18;
+    text-align: justify;
+    padding: 0 20px;
+}
 .cardscontainer h3{
     padding: 10px 0px 5px 0px;
 }
