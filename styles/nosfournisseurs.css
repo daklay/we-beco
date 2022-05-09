@@ -66,11 +66,14 @@
     background-color: var(--tertiary);
     background-color: var(--primary);
     width: 380px;
-    /* height: 300px; */
+    height: 272px;
     border-radius: 10px;
     padding: 5px;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+.face{
+    box-shadow: rgba(99, 98, 98, 0.2) 0px 8px 24px;
+    border-radius: 10px;
 }
 .cardscontainer .suppimage{
     display: flex;
@@ -90,4 +93,48 @@
 }
 .cardscontainer p{
     padding: 0px 0px 5px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card1{
+    position: relative;
+    /* transform-style: preserve-3d; */
+}
+/* .card1 .back{
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+.card1 .face{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 0.7s ease-in-out;
+    /* transform: perspective(500px) rotateY(0deg); */
+
+}
+.card1:hover .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+.card1:hover .face.back{
+    transform: perspective(500px) rotateY(360deg);
+}
+.card1 .face.back{
+    background-color: var(--tertiary);
+    transform: perspective(500px) rotateY(180deg);
 }
