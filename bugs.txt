@@ -16,3 +16,4 @@ to know about -webkit
 - (qui somme nous) header height and title size scale
 save
 -login popup font/input[checkbox] color
+-link single blog with blog page 
