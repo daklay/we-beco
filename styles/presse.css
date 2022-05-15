@@ -50,6 +50,7 @@
     width: 94%;
     background-color: #f0f0f0;
     border-radius: 10px;
+    background-size: cover;
 }
 .linecontainerblogcard .imgcoverbunique{
     width: 600px !important;
