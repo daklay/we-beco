@@ -7,6 +7,7 @@
 }
 .footer{
     background-color: var(--tertiary);
+    background-color: var(--primary);
 }
 /* ##############################spacer###################################### */
 .thespacer{
@@ -16,7 +17,8 @@
 }
 /* ###################### herosection ############################## */
 .herosectionpc{
-    background-color: var(--tertiary);
+    background-color: rgb(128, 128, 128);
+    background: linear-gradient(-90deg, #3c0202, #280000);
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -33,6 +35,7 @@
     padding: 0 20%;
     letter-spacing: .2rem;
     text-align: center;
+    color: white;
 }
 .textheropccontainer p{
     font-size: clamp(20px, 1vw, 100px);
@@ -40,5 +43,102 @@
     padding: 0 20%;
     letter-spacing: .1rem;
     text-align: center;
+    color: white;
+}
+/*################## pack section ##############*/
+.thepackcontainer{
+    /* background-color: var(--primary); */
+    background-color: #f6f9fc;
+    height: 1200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.thepackflex{
+    /* background-color: purple; */
+    height: 1230px;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -100px;
+    gap: 30px;
+}
+.thepackflex .thecardpack{
+    background-color: var(--primary);
+    height: 560px;
+    width: 350px;
+    /* border: 1px solid black; */
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 5px 35px;
+}
+.packheader .titlepack{
+    background-color:var(--secondary) ;
+    background-color:#044d3d ;
+    /* width: 80%; */
+    height: 40px;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto 0px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px -5px #044d3d;
+}
+.packheader p{
+    text-align: center;
+    font-size: 40px;
+    line-height: 1;
+    padding: 30px 0 0 0;
+}
+.packheader p sup{
+    font-size: 25px;
+}
+.packheader .optionpack{
+    background-color:var(--primary) ;
+    width: 120px;
+    height: 30px;
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto 0px auto;
+    border-radius: 13px;
+    box-shadow: 0 0 50px -10px rgb(0 0 0 / 10%);
 
+}
+.packfooter .btnaddtocartpack a{
+    background-color:var(--secondary) ;
+    width: 140px;
+    height: 50px;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 20px auto;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 50%);
+}
+.packbody div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.packbody div i{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    height: 35px;
+    padding: 0 7px 0 0;
+}
+.packbody div p{
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding: 0 0 10px 0;
 }
