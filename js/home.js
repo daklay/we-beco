@@ -1,25 +1,56 @@
-////////////////////////////////home/////////////////////////////
-// // function hover(element) {
-// //     element.setAttribute('src', 'images/1-1.png');
-// // }
-// // function unhover(element) {
-// //     element.setAttribute('src', 'images/new1.png');
-// // }
-// // onmouseover="hover(this);" onmouseout="unhover(this);
-
-// function whover(element){
-//     switch(element.src){
-//         case "images/new1.png" :element.setAttribute('src', 'images/1-1.png');
-//         case "images/new5.png" :element.setAttribute('src', 'images/new5-2.png');
-//         case "images/new3.png" :element.setAttribute('src', 'images/new3-2.png');
-//         case "images/new4.png" :element.setAttribute('src', 'images/new4-2.png');
-                     
+// ///////////////// products hover effect //////////////////////////
+// function hover(x){
+//     console.log(x.alt)
+//     switch (x.alt) {
+//         case 1:
+//             x.src="images/1-1.png";
+//             break;
+//         case 2:
+//             x.src="images/1-1.png";
+//             break;
+//         case 3:
+//             x.src="images/1-1.png";
+//             break;
+//         case 4:
+//             x.src="images/1-1.png";
+//             break;
 //     }
+//     // x.src="images/1-1.png";
+//     // console.log(x.alt)
 // }
-// // function lhover(element){
+// function unhover(y){
+//     switch (y.alt) {
+//         case 1:
+//             y.src="images/1-1.png";
+//             break;
+//         case 2:
+//             y.src="images/1-1.png";
+//             break;
+//         case 3:
+//             y.src="images/1-1.png";
+//             break;
+//         case 4:
+//             y.src="images/1-1.png";
+//             break;
+//     }
+//     // y.src="images/new1.png"; 
+// } 
 
-// // }
 
+///////////// product hero section
 
+var btnright = document.getElementById("btn1");
+var btnleft = document.getElementById("btn2");
+var sectionindex = 0;
+var productslide = document.getElementById("productslide")
 
-///////////////////////product page///////////////////////////////
+btnright.addEventListener("click", ()=>{
+    //ternary operation
+    sectionindex = (sectionindex < 2) ? sectionindex + 1 : 2;
+    productslide.style.transform = 'translate('+ (sectionindex) * -100 +'%)';
+})
+btnleft.addEventListener("click", ()=>{
+    //ternary operation
+    sectionindex = (sectionindex > 0) ? sectionindex - 1 : 0;
+    productslide.style.transform = 'translate('+ (sectionindex) * -100 +'%)';
+})
