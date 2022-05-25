@@ -864,22 +864,43 @@ body{
     /* background-color: brown; */
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
-.brandsimg div{
+.brandsimg .img{
     /* background-color: #4b6361; */
-    width: 10%;
+    width: 168.5px;
     height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     filter: grayscale(100%);
     transition: ease-out 0.30s;
     /* filter in transition  */
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
 }
-.brandsimg div:hover{
+.brandsimg .img:hover{
     filter: grayscale(0%);
+}
+
+.wrapperslider{
+    /* background-color: red; */
+    width: 1011px;
+    display: flex;
+    animation: brandsimg 20s linear infinite;
+    position: absolute;
+}
+.wrapperslider .parti{
+    display: flex;
+    width: 100%;
+    /* width: 1011px; */
+    justify-content: space-between;
+}
+
+@keyframes brandsimg {
+    0% { left: 0; }
+    100% { left: -100%; }
 }
 /* ##############################newsletter section ###################################### */
 .newslettercontainer{

@@ -1,7 +1,7 @@
-- js product section (Home) hover img and cart  icon
-- (home) hero section product slide 
+- js product section (Home) hover img and cart  icon //done
+- (home) hero section product slide //done
 - colors (all)
-- icon after (Menu)
+- icon after (Menu) //done
 - promo btn 
 - our brands section slide (Home)
 - lang (fr/ar)
