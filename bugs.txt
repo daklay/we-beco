@@ -3,7 +3,7 @@
 - colors (all)
 - icon after (Menu) //done
 - promo btn 
-- our brands section slide (Home)
+- our brands section slide (Home) // done
 - lang (fr/ar)
 - categories style color (Home)
 - range slide (nos ordi)
@@ -11,7 +11,6 @@
 - (general) loading icon
 - (nos ordi) filter brand checkbox
 - (nos ordi) hero section background
-to know about -webkit
 - hero section (home) shape in background
 - (qui somme nous) header height and title size scale
 save

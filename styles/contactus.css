@@ -63,14 +63,14 @@
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
-    height: 800px;
+    height: 630px;
     padding: 0 172px;
     position: relative;
 }
 .containercontactus .calltoactionform{
     /* background-color: #be6e6e; */
     width: 300px;
-    height: 660px;
+    height: 530px;
     padding-top: 70px;
     display: flex;
     flex-direction: column;
@@ -78,10 +78,30 @@
 }
 .callway .calldivs{
     background-color: #c4c4c4;
-    height: 100px;
+    color: wheat;
+    background-color: #9E121B;
+    background-image: linear-gradient(
+  115deg,
+  hsl(356deg 90% 49%) 0%,
+  hsl(356deg 89% 48%) 20%,
+  hsl(356deg 87% 46%) 29%,
+  hsl(356deg 87% 45%) 36%,
+  hsl(356deg 86% 43%) 43%,
+  hsl(356deg 85% 42%) 50%,
+  hsl(356deg 83% 40%) 57%,
+  hsl(356deg 83% 39%) 64%,
+  hsl(356deg 81% 37%) 71%,
+  hsl(356deg 80% 36%) 80%,
+  hsl(356deg 80% 35%) 100%
+);
+    height: 90px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-left: 20px;
+    justify-content: center;
+    border-radius: 3px;
+    /* padding-left: 20px; */
+    /* margin-top: 50px; */
 }
 .calltoactionform h5{
     font-size: 35px;
@@ -91,12 +111,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 460px;
+    height: 340px;
 }
 .contactusform{
     /* background-color: aqua; */
     width: 700px;
-    height: 700px;
+    /* height: 650px; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -104,7 +124,7 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 25px 0px;
     position: absolute;
     right: 172px;
-    top: -104px;
+    top: -118px;
 }
 .contactusform .formheader{
     display: flex;
@@ -121,6 +141,13 @@
     background-color: #c4c4c4;
     border: #c4c4c4;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon i{
+    color: var(--color);
+    font-size: 25px;
 }
 .contactusform .textformheader{
     width: 600px;
@@ -162,16 +189,34 @@
     padding: 10px 0;
 
 }
+.filediv input{
+    border: 1px solid #ffffff !important;
+    background-color: #ffffff !important;
+    padding-left: 0px !important;
+}
 .contactusform form input{
     width: 47%;
     border: 1px solid #f0f0f0;
     border-radius: 6px;
     height: 40px;
     background-color: #f0f0f0;
+    outline: none;
+    padding-left: 15px;
+}
+form .termscondition input{
+    width: 17px;
+
+}
+form .termscondition{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
 }
 .contactusform form .lastdiv input:last-child{
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
+    padding:20px 0 200px 15px;
+    
 }
 .contactusform form button{
     width: 100%;
@@ -180,5 +225,4 @@
     /* color: #9E121B; */
     color: #999999;
     opacity: 1; /* Firefox */
-    padding-left: 15px;
 }

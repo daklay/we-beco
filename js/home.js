@@ -45,12 +45,10 @@ var sectionindex = 0;
 var productslide = document.getElementById("productslide")
 
 btnright.addEventListener("click", ()=>{
-    //ternary operation
     sectionindex = (sectionindex < 2) ? sectionindex + 1 : 2;
     productslide.style.transform = 'translate('+ (sectionindex) * -100 +'%)';
 })
 btnleft.addEventListener("click", ()=>{
-    //ternary operation
     sectionindex = (sectionindex > 0) ? sectionindex - 1 : 0;
     productslide.style.transform = 'translate('+ (sectionindex) * -100 +'%)';
 })

@@ -23,9 +23,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background: url(/images/pcgamer2.jpg);
+    /* background: url(/images/banner1.jpeg);
     background-repeat:no-repeat;
-    background-position: 50%;
     background-size: cover; */
 }
 /* .textheropccontainer{
@@ -161,7 +160,10 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
-
+.brandoption .brandline div:hover{
+    background-color: #9e121b6c;
+    cursor: pointer;
+}
 
 .brandoption .brandline div{
     width: 100px;

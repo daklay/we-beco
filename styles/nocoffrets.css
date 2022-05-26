@@ -109,7 +109,7 @@
     align-items: center;
     margin: 25px auto 0px auto;
     border-radius: 13px;
-    box-shadow: 0 0 50px -10px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 1.1);
 
 }
 .packfooter .btnaddtocartpack a{

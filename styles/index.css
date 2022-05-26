@@ -295,6 +295,9 @@ body{
     transform: rotate(180deg);
     color: white;
 }
+.languagedropdown i:hover{
+    cursor: pointer;
+}
 .herotext{
     width: 40%;
 }
@@ -1011,6 +1014,10 @@ body{
 .cardheader .x i{
     line-height: 40px;
 }
+.cardheader .x i:hover{
+    line-height: 40px;
+    cursor: pointer;
+}
 .cardheader p{
     line-height: 15px;
     color: gray;
@@ -1113,11 +1120,15 @@ body{
 
 /* account signup signin popup */
 #btnaccount{
+    font-size: 23px;
     position: absolute;
     top: 0px;
     left: 15px;
     color: rgb(143, 22, 22);
     z-index:50;
+}
+#btnaccount:hover{
+    cursor: pointer;
 }
 .accountcon{
 	background: #0000002f;
