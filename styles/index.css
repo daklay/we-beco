@@ -806,9 +806,30 @@ body{
     font-size: 14px;
 }
 .divo .pricepro{
+    display: flex;
     width: 100%;
     color: var(--secondary);
+    justify-content: space-between;
+    align-items: center;
+}
+.divo .pricepro p{
     font-size:x-large;
+    font-weight: 700;
+}
+.divo .pricepro span{
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-weight: 100;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+.divo .pricepro span:hover{
+    cursor: pointer;
+}
+.divo .pricepro span:active{
+    background-color:#9e121bbd;
+    border-color:#9e121bbd;
 }
 .productcontainer .divo{
     /* background-color: rgb(207, 136, 85); */
@@ -818,6 +839,20 @@ body{
     /* align-items: center; */
     width: 280px;
     height: 300px;
+    position: relative;
+}
+.productcontainer .divo .promoproduct{
+    position: absolute;
+    /* right: 10px; */
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+    background-color: #ff0000;
+    color: var(--primary);
+    font-weight: 100;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 3px 5px;
 }
 
 

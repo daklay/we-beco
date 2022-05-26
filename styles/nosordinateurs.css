@@ -23,9 +23,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background: url(/images/banner1.jpeg);
+    background: url(/images/banner1.jpeg);
     background-repeat:no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 /* .textheropccontainer{
     background-color: var(--secondary);
@@ -282,9 +282,32 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 14px;
 }
 .divo .pricepro{
+    display: flex;
     width: 100%;
     color: var(--secondary);
+    justify-content: space-between;
+    align-items: center;
+}
+.divo .pricepro p{
     font-size:x-large;
+    font-weight: 700;
+}
+.divo .pricepro span{
+    background-color: var(--secondary); 
+    color: var(--primary);
+    /* color: var(--secondary); */
+    font-weight: 100;
+    /* text-decoration: underline; */
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+.divo .pricepro span:hover{
+    cursor: pointer;
+}
+.divo .pricepro span:active{
+    background-color:#9e121bbd;
+    border-color:#9e121bbd;
 }
 .productcontainer .divo{
     /* background-color: rgb(207, 136, 85); */
