@@ -437,7 +437,7 @@ body{
 }
 .shiping .icontxt p{
     width: 60%;
-    font-size: clamp(15px, 4vw, 18px);
+    font-size: clamp(15px, 1.5vw, 18px);
     line-height: clamp(27px, 4vw, 30px);
 }
 .shiping .iconback{
