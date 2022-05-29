@@ -1,0 +1,13 @@
+body{
+    background-image: url(/images/blurryerro.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.therock{
+    background-image: url(/images/therock.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(100px);
+    color: white;
+}

@@ -1,0 +1,21 @@
+:root{
+    --primary: #FFFFFF;
+    --secondary: #9E121B;
+    --tertiary: #F3F3F3;
+    --color: #191A18;
+    
+}
+.footer{
+    background-color: var(--tertiary);
+}
+
+body .alllegalindiv{
+    padding: 50px 172px;
+}
+body h1{
+    margin: 25px 0;
+}
+body pre{
+    display: flex;
+    white-space:pre-line;
+}
