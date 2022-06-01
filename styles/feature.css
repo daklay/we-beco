@@ -9,12 +9,6 @@
     background-color: var(--tertiary);
     background-color: var(--primary);
 }
-/* ##############################spacer###################################### */
-.thespacer{
-    height: 500px;
-    /* background: var(--tertiary); */
-    background-color: #9E121B;
-}
 /* ###################### herosection ############################## */
 .herosectionpc{
     /* background-color: rgb(128, 128, 128); */
@@ -79,7 +73,7 @@
 }
 .thepackflex{
     background-color: purple;
-    height: 800px;
+    min-height: 800px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -97,4 +91,52 @@
     justify-content: space-between;
     /* border-radius: 5px; */
     padding: 5px 35px;
+}
+/* pach head */
+.thecardpack .packhead{
+    background-color: blueviolet;
+    display: flex;
+    /* justify-content: space-around; */
+    height: 60px;
+}
+.packhead div{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+}
+.thecardpack .packbody{
+    background-color: rgb(87, 68, 104);
+}
+.thecardpack .packfooter{
+    background-color: rgb(98, 43, 226);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 60px;
+    padding: 0 20px 0 0;
+}
+.packfooter .btnpackfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #9E121B;
+    width: 150px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+}
+.packfooter .btnpackfooter:hover{
+    cursor: pointer;
+}
+.packfooter .btnpackfooter:active{
+    background-color: #9e121bad;
+
+}
+.packfooter .packpricetotaldiv{
+    width: 100px;
+    /* background-color: aquamarine; */
+    margin: 0 0 0 30px; 
+    color: white;
 }
