@@ -1,6 +1,7 @@
 - js product section (Home) hover img and cart  icon //done
 - (home) hero section product slide //done
 - colors (all)
+- menu class active in js event (menu)
 - icon after (Menu) //done
 - promo btn 
 - our brands section slide (Home) // done

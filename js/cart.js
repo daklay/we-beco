@@ -7,11 +7,13 @@ var header = document.getElementById('header')
 
 opencart.addEventListener("click", ()=>{
     // body.insertBefore(cart, header)
-    body.appendChild(cart)
+    // body.appendChild(cart)
+    cart.style.display = "flex"
     cart.style.opacity = '1'
 })
 closecart.addEventListener("click", ()=>{
-    body.removeChild(cart)
+    // body.removeChild(cart)
+    cart.style.display = "none"
     cart.style.opacity = '0'
 })
-body.removeChild(cart)
+// body.removeChild(cart)
