@@ -8,6 +8,7 @@
     <link rel="icon" href="images/favicon.png" >
     <link rel="stylesheet" href="styles/template.css">
     <link rel="stylesheet" href="styles/espaceclient.css">
+    <script src="/js/espace.js" defer></script>
     <title>OrdiShop - Maroc</title>
 </head>
 <body>
@@ -52,14 +53,20 @@
                     <div class="espaceprofile"></div>
                     <p class="username">mossaab amimar</p>
                     <ul class="navlistespace">
-                        <li><a href="#">Dashboard</a> </li>
-                        <li><a href="#">Orders</a> </li>
-                        <li><a href="#">Downloads</a> </li>
-                        <li><a href="#">Account details</a>  </li>
-                        <li><a href="#">Logout</a> </li>
+                        <li onclick="filterSelection('Dashboard')" ><a href="#" class="btnact active">Dashboard</a> </li>
+                        <li onclick="filterSelection('Orders')" ><a href="#" class="btnact">Orders</a> </li>
+                        <li onclick="filterSelection('Downloads')" ><a href="#" class="btnact" >Downloads</a> </li>
+                        <li onclick="filterSelection('Account')" ><a href="#" class="btnact">Account details</a>  </li>
+                        <li onclick="filterSelection('Logout')" ><a href="#" class="btnact">Logout</a> </li>
                     </ul>
                 </div>
-                <div class="espacecontent"></div>
+                <div class="espacecontent">
+                    <div class="espacesubpages Dashboard" id="test"> Dashboard</div>
+                    <div class="espacesubpages Orders"> Orders</div>
+                    <div class="espacesubpages Downloads"> Downloads</div>
+                    <div class="espacesubpages Account"> Account</div>
+                    <div class="espacesubpages Logout"> Logout</div>
+                </div>
             </div>
         </div>
     </div>

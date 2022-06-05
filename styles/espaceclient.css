@@ -52,6 +52,10 @@
 	border-radius: 50px;
 	background-color: #191A18;
 	margin: 0 0 13px 0;
+	background-image: url(/images/flopppa.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .navheader .navlistespace{
 	list-style-type: none;
@@ -83,4 +87,30 @@
 	background-color: #9E121B;
 	color: white;
 	border-radius: 10px 0 0 10px;
+}
+.navheader .navlistespace .active{
+	background-color: #9E121B;
+	color: white;
+	border-radius: 10px 0 0 10px;
+}
+/* elemnts subpages */
+.espaceclient .espacecontent{
+	background-color: rgb(37, 190, 190);
+	height: 100%;
+	width: calc(100% - 20%);
+	position: relative;
+}
+.espacesubpages{
+	background-color: #3c9435;
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.show{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
