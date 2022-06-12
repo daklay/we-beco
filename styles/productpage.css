@@ -1,0 +1,22 @@
+:root{
+    --primary: #FFFFFF;
+    --secondary: #9E121B;
+    --tertiary: #F3F3F3;
+    --color: #191A18;
+    
+}
+*{
+    font-family: "std";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer{
+    background-color: var(--tertiary);
+}
+.containerproductpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
