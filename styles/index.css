@@ -57,6 +57,22 @@
     width: 100%;
 
 }
+@media (max-width: 1140px) {
+    .navlist{
+        /* background-color: var(--tertiary); */
+        background-color: rgb(221, 221, 221);
+        position: fixed;
+        inset: 0 0 0 30%;
+        z-index: 1;
+        padding: 50px 0 0 0;
+    }
+    .navlist ul{
+        flex-direction: column;
+    }
+    .navlist ul li{
+        padding: 30px 0 0 0;
+    }
+}
 /* ##############################promobar###################################### */
 .promo{
     background-color: var(--color);
