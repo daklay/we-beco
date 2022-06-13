@@ -57,14 +57,27 @@
     width: 100%;
 
 }
+@media screen and (max-width: 1279px){
+    .navbar {
+        padding: 0px 40px;
+    }
+}
 @media (max-width: 1140px) {
     .navlist{
         /* background-color: var(--tertiary); */
+        
         background-color: rgb(221, 221, 221);
         position: fixed;
         inset: 0 0 0 30%;
         z-index: 1;
         padding: 50px 0 0 0;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    .navlist2{
+        transform: translateX(0%);
+        opacity: 1;
     }
     .navlist ul{
         flex-direction: column;
@@ -72,7 +85,25 @@
     .navlist ul li{
         padding: 30px 0 0 0;
     }
+    .navtoggle{
+        background: url(/images/bars-solid.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+        z-index: 100;
+    }
+    .navtogglex{
+        background: url(/images/xmark-solid.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+        z-index: 100;
+    }
+    .navtoggle:hover{
+        cursor: pointer;
+    }
 }
+
 /* ##############################promobar###################################### */
 .promo{
     background-color: var(--color);
@@ -85,6 +116,10 @@
 .promo p{
     color: var(--tertiary);
 }
+.p2mobile{
+    display: none;
+}
+
 .btn-chr{
     display: flex;
     align-items: center;
@@ -115,39 +150,36 @@
     color: var(--tertiary);
 }
 
-
-@media screen and (max-width: 1279px){
+@media screen and (min-width:1440px){
     .navbar{
-        padding: 0px 40px;
+        padding: 0px 172px;
     }
     .promo{
-        padding: 0px 40px;
+        padding: 0px 172px;
     }
 }
 @media screen and (max-width: 1023px){
-    .navbar{
-        padding: 0px 30px;
+    .btn-chr{
+        min-width: 120px;
     }
-    .promo{
-        padding: 0px 30px;
-    }
-}
-@media screen and (max-width: 768px){
-    .navbar{
-        padding: 0px 16px;
-    }
-    .promo{
-        padding: 0px 16px;
+    .btn-chr ul{
+        display: none;
     }
 }
-@media screen and (min-width: 1440px){
-    .navbar{
-        padding: 0px 172px;
-    }
-    .promo{
-        padding: 0px 172px;
+@media screen and (max-width: 1279px){
+    .promo {
+        padding: 0px 40px;
     }
 }
+@media screen and (max-width: 780px){
+    .p2mobile{
+        display: flex;
+    }
+    .promo p:first-child{
+        display: none;
+    }
+}
+
 
 /* ##############################footer###################################### */
 body{
@@ -363,6 +395,9 @@ body{
 .heropic{
     width: 50%;
     height: 398px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 /* .heropic .heropicsub{
     position: relative;
@@ -378,7 +413,7 @@ body{
 }
 .heropic .heropicsub{
     display: flex;
-    height: 376px;
+    /* height: 376px; */
     transition: all 0.3s;
 }
 .item_option{
@@ -414,20 +449,52 @@ body{
 @media screen and (max-width: 1199px){
     .buttonhero a{
         font-size: 18px;
-        padding: 10px 30px;
+        padding: 7px 30px;
         line-height: 27px;
     }
 }
-
-/* @media screen and (min-width: 1440px){
-    .hero_section{
-        padding: 0px 64px;
+@media screen and (max-width: 880px){
+    .buttonhero{
+        /* background-color: red; */
+        flex-direction: column;
+        align-items: flex-start;
     }
-} */
+    .buttonhero a:not(:first-child){
+        margin-left: 0;
+    }
+    .buttonhero a:first-child{
+        margin: 0 0 15px 0;
+    }
+}
+@media screen and (max-width: 680px){
+    .buttonhero{
+        /* background-color: red; */
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .buttonhero a:not(:first-child){
+        margin-left: 20px;
+    }
+    .hero_section{
+        flex-direction:column-reverse;
+    }
+    .herotext{
+        width: 100%;
+    }
+    .heropic{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px){
+    .hero_section{
+        height: 500px;
+        padding-bottom: 10px; 
+    }
+}
 
 /* ##############################shiping section###################################### */
  .shiping{
-    height: 90px;
+    /* height: 90px; */
     display: flex;
     justify-content: center;
 }
@@ -473,27 +540,36 @@ body{
 
 
 
-/* @media screen and (max-width: 1279px){
-    .shiping{
-        padding: 0px 150px;
-    }
-}
 @media screen and (max-width: 1023px){
-    .shiping{
-        padding: 0px 270px;
+    .shipingall{
+        width: 80%;
     }
 }
-@media screen and (max-width: 768px){
-    .shiping{
-        padding: 0px 270px;
+@media screen and (max-width: 550px){
+    .shipingall{
+        /* background-color: red; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    .shiping .icontxt{
+        width: 90%;
+        flex-direction: row-reverse;
+        border-bottom: 2px solid #2c2c2c;
+    }
+    .shiping .icontxt p{
+        width: fit-content;
+        font-size: larger;
+    }
+    .shiping .iconback{
+        background-color: transparent;
+    }
+    .shiping .iconback:hover{
+        background-color: transparent;
+        color: black; 
     }
 }
-@media screen and (min-width: 1440px){
-    .shiping{
-        padding: 0px 340px;
-    }
-} */
-
 
 /* ##############################categories section###################################### */
 .categoriescontainer{
@@ -651,6 +727,23 @@ body{
         height: 500px;
     }
 }
+@media screen and (max-width: 890){
+    .categoriesline1{
+        width: 700px;
+    }
+    .categoriesline1 .div{
+        height: 200px;
+    }
+    .categoriesline2{
+        width: 800px;
+    }
+    .categoriesline2 .div{
+        height: 60px;
+    }
+    .categoriescontainer{
+        height: 500px;
+    }
+}
 /* ##############################aboutus section###################################### */
 .aboutus{
     background-color: var(--tertiary);
@@ -690,6 +783,9 @@ body{
 }
 .textdiv p{
     font-size:17px;
+}
+.textdiv .div3{
+    width: 400px;
 }
 .textdiv .div1{
     /* background-color: #925155; */
@@ -737,17 +833,39 @@ body{
     transition: ease-out 0.4s;
 }
 
-
-@media screen and (max-width: 1087px){
+@media screen and (max-width: 1279px){
     .insideaboutus{
         width: 900px;
-        height: 250px;
+    }
+    .textdiv h2{
+        font-size: 25px;
+    }
+    .textdiv h5{
+        font-size: 18px; 
+    }
+    .textdiv{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .insideaboutus{
+        width: 800px;
+        height: 280px;
     }
     .insideaboutus video{
         width: 450px ;
     }
+    .textdiv .div4{
+        height: 100px;
+    }
     .aboutus{
         height: 400px;
+    }
+    .textdiv .div3{
+        width: 300px;
+        height: 120px;
+        font-size: 10px;
+        overflow: hidden;
     }
 }
 
@@ -759,7 +877,8 @@ body{
 }
 /* ############################## products section ###################################### */
 .productallcontainer{
-    height: 550px;
+    /* add min to height here tooo0o0o0o */
+    min-height: 550px;
     background-color: var(--primary);
     display: flex;
     justify-content: center;
@@ -778,9 +897,11 @@ body{
 }
 .productcontainer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 350px;
+    /* added the min height here */
+    min-height: 350px;
     width: 100%;
     /* background-color: #dd1111; */
 }
@@ -1028,7 +1149,24 @@ body{
     opacity: 1; /* Firefox */
     padding-left: 15px;
 }
-/* cart */
+@media screen and (max-width: 1279px){
+    .newsletterall{
+        width: 900px;
+    }
+    .newslettercontainer{
+        height: 450px; 
+    }
+}
+@media screen and (max-width: 1023px){
+    .newsletterall{
+        width: 800px;
+    }
+    .newsletterall .text h2{
+        font-size: 30px;
+        padding: 0 0 5px 0;
+    }
+}
+/*################################# cart #######################*/
 .cardcontainerall{
     background-color: #00000070;
     opacity: 0;
