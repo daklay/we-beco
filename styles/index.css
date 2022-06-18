@@ -893,9 +893,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 15px;
+    padding: 25px;
+    
 }
 .productcontainer{
+    padding: 5px 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -903,7 +905,7 @@ body{
     /* added the min height here */
     min-height: 350px;
     width: 100%;
-    /* background-color: #dd1111; */
+    background-color: #dd1111;
 }
 .divo .img{
     background-color: var(--tertiary);
@@ -977,6 +979,8 @@ body{
     width: 280px;
     height: 300px;
     position: relative;
+    padding:0 0 25px 0;
+    margin: 0 5px;
 }
 .productcontainer .divo .promoproduct{
     position: absolute;
@@ -997,6 +1001,13 @@ body{
 @media screen and (min-width: 1440px){
     .productallcontainer{
         padding: 0px 172px;
+    }
+}
+/* margin 20 */
+@media screen and (max-width: 1240px){
+    .productcontainer{
+        background-color: yellow;
+        /* padding: 0 110px; */
     }
 }
 /* ############################## our brands section ###################################### */
