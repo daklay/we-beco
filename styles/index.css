@@ -850,7 +850,7 @@ body{
 }
 @media screen and (max-width: 1023px){
     .insideaboutus{
-        width: 800px;
+        /* width: 700px; */
         height: 280px;
     }
     .insideaboutus video{
@@ -868,6 +868,7 @@ body{
         font-size: 10px;
         overflow: hidden;
     }
+
 }
 @media screen and (max-width: 900px){
     .aboutus{
@@ -877,6 +878,10 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .insideaboutus video{
+        width: 400 !important;
+        padding: 0 0 5px 0;
     }
 }
 
