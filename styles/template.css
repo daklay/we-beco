@@ -297,6 +297,15 @@ body{
     .footer{
         padding: 0px 16px;
     }
+    .footermenu{
+        display: block;
+        /* justify-content: space-between;
+        padding-top: 40px; */
+    }
+    .width{
+        width: 100%;
+        padding: 5px 0;
+    }
 }
 @media screen and (min-width: 1440px){
     .footer{
