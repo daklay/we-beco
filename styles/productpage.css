@@ -199,6 +199,11 @@
     height: 3px;
     background-color: var(--secondary);
 }
+@media (max-width: 900px ){
+    .bodyproductpage ul li{
+        padding: 15px 25px;
+    }
+}
 /* ################ FOOTER ############### */
 .footerproductpage{
     /* background-color: blueviolet; */
