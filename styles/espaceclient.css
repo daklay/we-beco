@@ -83,11 +83,11 @@
 	left: 0;
 	padding: 20px 0 20px 25%;
 }
-.navheader .navlistespace a:hover{
+/* .navheader .navlistespace a:hover{
 	background-color: #9E121B;
 	color: white;
 	border-radius: 10px 0 0 10px;
-}
+} */
 .navheader .navlistespace .active{
 	background-color: #9E121B;
 	color: white;

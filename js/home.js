@@ -55,7 +55,7 @@ btnleft.addEventListener("click", ()=>{
 
 
 
-////////////////////////// toggle menu ///////////
+////////////////////////// * toggle menu * ///////////
 
 const primarymenu = document.querySelector(".navlist");
 const navtoggle = document.querySelector(".navtoggle");
