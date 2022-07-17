@@ -86,7 +86,7 @@
 .blogimagesection .actualimg{
     height: 350px;
     width: 1100px;
-    background-color: #38b4b8;
+    /* background-color: #38b4b8; */
     position: absolute;
     /* top: 0; */
     /* bottom: 0; */

@@ -97,7 +97,7 @@ CREATE TABLE reviews(
 )
 CREATE TABLE blog(
 	id int(30) AUTO_INCREMENT,
-    title varchar(40),
+    title varchar(140),
     subdescription varchar(100),
     blogdate varchar(40),
     author_admin int(50),

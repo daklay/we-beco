@@ -47,8 +47,8 @@
             <div class="buttonhero">
                 <!-- <button>For Work</button>
                 <button>See More</button> -->
-                <a href="#">For Work</a>
-                <a href="#">See More</a>
+                <a href="contactus.php">For Work</a>
+                <a href="Nos ordinateurs.php">See More</a>
             </div>
         </div>
         <div class="heropic">
@@ -99,13 +99,13 @@
     <div class="categoriescontainer">
         <div class="categoriesall">
             <div class="categoriesline1">
-                <div class="pcgamer div">
+                <div class="pcgamer div" onclick="window.location.href = 'Nos ordinateurs.php?categorie=pcgamer'">
                     <div class="test"><p>Pc gamer</p></div>
                 </div>
-                <div class="pcbureau div">
+                <div class="pcbureau div" onclick="window.location.href = 'Nos ordinateurs.php?categorie=pcbureau'">
                     <div class="test"><p>Pc bureau</p></div>
                 </div>
-                <div class="pcportable div">
+                <div class="pcportable div" onclick="window.location.href = 'Nos ordinateurs.php?categorie=pcportable'">
                     <div class="test"><p>pc portable</p></div>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                 <div class="pcaccessoire div">
                     <div class="test"><p>Accessoire</p></div>
                 </div>
-                <div class="buildyours div">
+                <div class="buildyours div" onclick="window.location.href='feature.php'">
                     <div class="test test1">
                         <p>Build your own</p>
                         <i class="fa-solid fa-arrow-right-long"></i>
@@ -196,7 +196,7 @@
                 <div class="div1"><h2>About Us Exameple landing</h2></div>
                 <div class="div2"><h5>About Us title Example</h5></div>
                 <div class="div3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus voluptates aliquam dolor sit amet consectetur adipisicing elit. Vel consequatur natus hic inventore iusto consequuntur quidem facilis, omnis, facere sit laborum necessitatibus nobis modi veniam impedit officiis.</p></div>
-                <div class="div4"><a href="#">Read More...</a></div>
+                <div class="div4"><a href="Qui sommes-nous.php">Read More...</a></div>
             </div>
         </div>
     </div>

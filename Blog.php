@@ -71,7 +71,7 @@
                             <p><?php echo $c['subdescription']?></p>
                         </div>
                         <div class="btnseemore">
-                            <a href="singlearticle.html?blogid=<?php echo $c['id'] ?>">SEE MORE</a>
+                            <a href="singlearticle.php?blogid=<?php echo $c['id'] ?>">SEE MORE</a>
                         </div>
                     </div>                
                 <?php
@@ -81,7 +81,7 @@
     </div>
     <!-- spacer -->
     <!-- <div class="thespacer"></div> -->
-        <!-- footer -->
-        <?php include "includes/footer.php" ?>
+    <!-- footer -->
+    <?php include "includes/footer.php" ?>
 </body>
 </html>

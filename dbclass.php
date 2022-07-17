@@ -280,8 +280,22 @@ class blog extends db{
         $res = $stmt->fetchAll();
         return $res;
     }
+    public function getBlogsById($id){
+        $sql = "SELECT * FROM blog WHERE id=?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$id]);
+        $res = $stmt->fetchAll();
+        return $res;
+    }
 }
-
+class packs extends db{
+    public function getPacks(){
+        $sql = "SELECT * FROM packs";
+        $stmt = $this->connect()->query($sql);
+        $res = $stmt->fetchAll();
+        return $res;
+    }
+}
 
 
 

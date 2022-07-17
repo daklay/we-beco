@@ -20,7 +20,19 @@
         // print_r( $objpagination);
         
     }
-
+    if(isset($_GET['categorie'])){
+        $getProductByCategoriesobj = new test();
+        if($_GET['categorie'] == "pcgamer"){
+            $getProductByCategories = $getProductByCategoriesobj->getWhereProducts("pc gamer");
+        }
+        elseif($_GET['categorie'] == "pcbureau"){
+            $getProductByCategories = $getProductByCategoriesobj->getWhereProducts("pc bureau");
+        }
+        elseif($_GET['categorie'] == "pcportable"){
+            $getProductByCategories = $getProductByCategoriesobj->getWhereProducts("pc portable");
+        }
+        $products = $getProductByCategories;
+    }
 
 ?>
 <!DOCTYPE html>

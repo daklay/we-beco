@@ -8,42 +8,21 @@
     <link rel="icon" href="images/favicon.png" >
     <link rel="stylesheet" href="styles/template.css">
     <link rel="stylesheet" href="styles/nosfournisseurs.css">
+
+    <script src="js/cart.js" defer></script>
+    <script src="js/run.js" defer></script>
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/productsarchivepageajx2.js" defer></script>
+    <script src="js/addtocartajx.js" defer></script>
     <title>OrdiShop - Maroc</title>
 </head>
 <body>
+    <!-- account popup -->
+    <?php include "includes/acountpopup.php" ?>
+    <!-- cart  -->
+    <?php include "includes/cart.php" ?>
     <!-- header -->
-    <nav class="header">
-        <nav class="navbar">
-            <div class="logo1">
-                <a href="#"><img src="images/LOGOPNG-24.png" alt="navlogo" width="87.5" height="43.75"></a>
-            </div>
-            <div class="navlist">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Nos ordinateurs.html">Nos ordinateurs</a></li>
-                    <li><a href="Nos coffrets.html">Nos coffrets</a></li>
-                    <li><a href="Nous fournisseurs.html" class="active">Nos fournisseurs</a></li>
-                    <li><a href="Qui sommes-nous.html">Qui sommes-nous</a></li>
-                    <li><a href="Blog.html">Blog</a></li>
-                    <li><a class="width0" href="espace client.html"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a class="width0" href="panier.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
-
-                </ul>
-            </div>
-        </nav>
-        <div class="promo">
-            <p>Lorem ipsum dolor sit amet. Odio corporis numquam autem eum laboriosam!</p>
-            <div class="btn-chr">
-                <ul>
-                    <li>01<span> DAYS</span></li>
-                    <li>05<span> HRS</span></li>
-                    <li>37<span> MIN</span></li>
-                    <li>11<span> SEC</span></li>
-                </ul>
-                <button>Buy now</button>
-            </div>
-        </div>
-    </nav>
+    <?php include "includes/header.php" ?>
     <!-- herosection -->
     <div class="herosectionpc">
         <div class="textheropccontainer">
@@ -131,56 +110,6 @@
         </div>
     </div>
     <!-- footer -->
-    <div class="footer">
-        <div class="footermenu">
-            <div class="div1 width">
-                <div class="logo2">
-                    <a href="#"><img src="images/LOGOPNG-24.png" alt="navlogo" width="175" height="87.5"></a>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus architecto, molestias beatae voluptatem</p>
-                </div>
-            </div>
-            <div class="div2 width">
-                <ul>
-                    <li><h2><a href="#">Nos ordinateurs</a></h2></li>
-                    <li><a href="#">Nos ordinateurs de bureau</a></li>
-                    <li><a href="#">Mini PC</a></li>
-                    <li><a href="#">Ordinateurs protables</a></li>
-                </ul>
-            </div>
-            <div class="div3 width">
-                <ul>
-                    <li><h2><a href="#">Aide</a></h2></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Mentions legales</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="div4 width">
-                <ul>
-                    <li><h2><a href="#">Presse</a></h2></li>
-                    <li><h2><a href="#">Nos coffrets</a></h2></li>
-                    <li><h2><a href="#">Qui sommes-nous?</a></h2></li>
-                    <li><h2><a href="#">Blog</a></h2></li>
-                </ul>
-            </div>
-        </div>
-        <div class="spacer">
-            <span class="divider"></span>
-        </div>
-        <div class="footerALLright">
-            <div class="allrights">
-                <p>All rights reserved © 2022</p>
-            </div>
-            <div class="icons">
-                <ul>
-                    <li><i class="fa-brands fa-facebook-square fa-xl"></i></i></li>
-                    <li><i class="fa-brands fa-instagram-square fa-xl"></i></i></li>
-                    <li><i class="fa-brands fa-twitter-square fa-xl"></i></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <?php include "includes/footer.php" ?>
 </body>
 </html>
