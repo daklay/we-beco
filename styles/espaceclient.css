@@ -22,6 +22,7 @@
 }
 .espacenav{
 	display: flex;
+	align-items: center;
 	/* background-color: aquamarine; */
 	/* width: 100%; */
 	/* height: 100%; */
@@ -52,7 +53,7 @@
 	border-radius: 50px;
 	background-color: #191A18;
 	margin: 0 0 13px 0;
-	background-image: url(/images/flopppa.jpeg);
+	background-image: url(../images/flopppa.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -95,13 +96,14 @@
 }
 /* elemnts subpages */
 .espaceclient .espacecontent{
-	background-color: rgb(37, 190, 190);
-	height: 100%;
+	background-color: var(--primary);
+	/* background-color: rgb(37, 190, 190); */
+	height: 80%;
 	width: calc(100% - 20%);
 	position: relative;
 }
 .espacesubpages{
-	background-color: #3c9435;
+	/* background-color: #3c9435; */
 	height: 100%;
 	width: 100%;
 	display: none;
@@ -111,6 +113,107 @@
 }
 .show{
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	/* align-items: center;
+	justify-content: center; */
+}
+.userinfo{
+	padding: 5px 0 10px 20px;
+}
+.Logout i{
+	padding-left: 5px;
+}
+.Logout .logoutdiv{
+	padding: 5px 0 10px 20px;
+}
+.Logout i:hover{
+	cursor: pointer;
+	color: #9E121B;
+}
+
+/* ################## reviews ######### */
+
+
+table {
+  border-collapse: collapse;
+  /* border: 1px solid rgb(212, 208, 208); */
+  background-color: white;
+  text-align: left;
+  overflow: hidden;
+  border-radius: 5px;
+}
+table thead {
+  /* box-shadow: 0 5px 10px #e1e5ee; */
+  background-color: var(--tertiary);
+
+}
+table th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+table td {
+  padding: 1rem 2rem;
+}
+table a {
+  text-decoration: none;
+  color: #2962ff;
+}
+table a:hover{
+	color: #9E121B;
+}
+table tr {
+  /* background-color: #f4f6fb; */
+  border-bottom:1px solid rgb(194, 192, 192) ;
+}
+/*# sourceMappingURL=style.css.map */
+.reviewstabs{
+	width: 100%;
+	padding: 5px 0 10px 20px;
+}
+.reviewstabs table{
+	width: 100%;
+}
+/* ############# order ########### */
+.Orderstabs{
+	width: 100%;
+	padding: 5px 0 10px 20px;
+}
+.Orderstabs table{
+	width: 100%;
+}
+/* ############### acount details ############## */
+.userinfo{
+	width: 100%;
+}
+.userinfo .profile{
+	font-size: 30px;
+}
+.userinfo form{
+	margin: 20px 0px;
+}
+.userinfo form input{
+	padding: 10px 7px;
+	width: 50%;
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+.userinfo form input::placeholder{
+	color: #aeadad;
+}
+.userinfo form input[type=submit]{
+	width: 20%;
+	background-color: var(--color);
+	color: white;
+}
+.userinfo form input[type=submit]:hover{
+	background-color: #191a187e;
+	color: #191A18;
+	cursor: pointer;
+}
+/* ############ download ######### */
+.downloadsection{
+	padding: 5px 0 10px 20px;
 }

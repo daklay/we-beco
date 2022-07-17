@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include "dbclass.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,130 +13,32 @@
     <link rel="stylesheet" href="styles/template.css">
     <script src="js/cart.js" defer></script>
     <script src="js/run.js" defer></script>
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/addtocartajx.js" defer></script>
+    <script src="js/loginvalidation.js" defer></script>
     <link rel="stylesheet" href="styles/index.css">
     <title>OrdiShop - Maroc</title>
 </head>
 <body>
-    <!-- popup account -->
-    <div id="accountcon" class="accountcon">
-        <div class="container" id="container">
-            <a id="btnaccount"><i class="fa-solid fa-xmark"></i></a>
-            <div class="form-container sign-up-container">
-                <form action="">
-                    <h1>Hello, friend!</h1>
-                    <input type="text" name="name" placeholder="Name"><i class="fa-solid fa-user fa-lg"></i>
-                    <input type="email" name="email" placeholder="Email"><i class="fa-solid fa-envelope fa-lg"></i>
-                    <input type="password" name="password" placeholder="Password"><i class="fa-solid fa-lock fa-lg"></i>
-                    <div style="display: flex; align-items: center; margin: 15px 0;">
-                        <input type="checkbox" class="not100" style="margin: 0px; margin-right: 10px;">
-                        <p style="margin: 0;">I read and agree to <span style="color:#9E121B; font-weight: 800;">Terms & Conditions</span></p>
-                    </div>
-                    <button>Create Account</button>
-                </form>
-            </div>
-            <div class="form-container sign-in-container">
-                <form action="#">
-                    <h1>Sign In</h1>
-                    <input type="email" name="email" placeholder="Email"><i class="fa-solid fa-envelope fa-lg"></i>
-                    <input type="password" name="password" placeholder="Password"><i class="fa-solid fa-lock fa-lg"></i>
-                    <button style="margin: 10px 0;">login</button>
-                </form>
-            </div>
-            <div class="overlay-container">
-                <div class="overlay">
-                    <div class="overlay-panel overlay-left">
-                        <h1>Welcome Back!</h1>
-                        <p>To keep connected with us please login with your personal info</p>
-                        <button class="ghost" id="signIn">Sign In</button>
-                    </div>
-                    <div class="overlay-panel overlay-right">
-                        <h1>Hello, Friend!</h1>
-                        <p>Enter your details and start journey with us</p>
-                        <button class="ghost" id="signUp">Sign Up</button>
-                    </div>
-                </div>
+    <?php
+    if(isset($_SESSION['alert'])){
+        ?>
+        <div class="alertmessage">
+            <div class="contentalert">
+                <p><?php echo $_SESSION['alert']; ?></p>
+                <i class="fa-solid fa-xmark" id="closealert" onclick=this.parentElement.parentElement.remove()></i>
             </div>
         </div>
-    </div>
-    <!-- cart -->
-    <div id="cart" class="cardcontainerall">
-        <div class="cardcontainer">
-            <div class="cardheader">
-                <div class="x">
-                    <h2>Cart(3)</h2>
-                    <i class="fa-solid fa-x"></i>
-                </div>
-                <p>Free Shipping, 30 Days Return, 1 Year Warranty</p>
-                <!-- <div class="divider"></div> -->
-            </div>
-            <div class="cardbody">
-                <ul class="productslist">
-                    <li>
-                        <div class="start ">
-                            <p>Product description</p>
-                            <p>9,000.00 Dh</p>
-                        </div>
-                        <div class="center">
-                            <div class="amount">
-                                <i class="fa-solid fa-plus"></i>
-                                <p>5</p>
-                                <i class="fa-solid fa-minus"></i>
-                            </div>
-                            <div class="delet">
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                        </div>
-                        <div class="end">
-                            <img src="/images/pcbureau1.jpg" alt="err" style="height: 100px;">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="cardfooter">
-                <div class="total">
-                    <p>Subtotal</p>
-                    <p>4,000.00 Dh</p>
-                </div>
-                <div class="btncheckoutcard">
-                    <a href="#" >Procced To Checkout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+        <?php
+        unset($_SESSION['alert']);
+    }
+    ?>
+    <!-- account popup -->
+    <?php include "includes/acountpopup.php" ?>
+    <!-- cart  -->
+    <?php include "includes/cart.php" ?>
     <!-- header -->
-    <nav id="header" class="header">
-        <nav class="navbar">
-            <div class="logo1">
-                <a href="#"><img src="images/LOGOPNG-24.png" alt="navlogo" width="87.5" height="43.75"></a>
-            </div>
-            <div class="navtoggle"></div>
-            <div class="navlist">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="Nos ordinateurs.html">Nos ordinateurs</a></li>
-                    <li><a href="Nos coffrets.html">Nos coffrets</a></li>
-                    <li><a href="Nous fournisseurs.html">Nos fournisseurs</a></li>
-                    <li><a href="Qui sommes-nous.html">Qui sommes-nous</a></li>
-                    <li><a href="Blog.html">Blog</a></li>
-                    <li id="open"><a href="#" class="width0"><i class="fa-solid fa-user"></i></a></li>
-                    <li id="carticon"><a href="#" class="width0"><i class="fa-solid fa-basket-shopping"></i></a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="promo">
-            <p>Lorem ipsum dolor sit amet. Odio corporis numquam autem eum laboriosam!</p>
-            <p class="p2mobile">Promo click here to buy</p>
-            <div class="btn-chr">
-                <ul>
-                    <li>01<span> DAYS</span></li>
-                    <li>05<span> HRS</span></li>
-                    <li>37<span> MIN</span></li>
-                    <li>11<span> SEC</span></li>
-                </ul>
-                <button>Buy now</button>
-            </div>
-        </div>
-    </nav>
+    <?php include "includes/header.php" ?>
     <!-- hero section -->
     <div class="hero_section">
         <div class="herotext">
@@ -162,7 +68,7 @@
         </div>
     </div>
     <div class="languagedropdown">
-        <img src="/images/flagma.png" alt="err" height="20px">
+        <img src="images/flagma.png" alt="err" height="20px">
         <i class="fa-solid fa-angle-up"></i>
     </div>
     <!-- shiping section -->
@@ -349,58 +255,8 @@
         </div>
     </div>
     <!-- footer -->
-    <div class="footer">
-        <div class="footermenu">
-            <div class="div1 width">
-                <div class="logo2">
-                    <a href="#"><img src="images/LOGOPNG-24.png" alt="navlogo" width="175" height="87.5"></a>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus architecto, molestias beatae voluptatem</p>
-                </div>
-            </div>
-            <div class="div2 width">
-                <ul>
-                    <li><h2><a href="#">Nos ordinateurs</a></h2></li>
-                    <li><a href="#">Nos ordinateurs de bureau</a></li>
-                    <li><a href="#">Mini PC</a></li>
-                    <li><a href="#">Ordinateurs protables</a></li>
-                </ul>
-            </div>
-            <div class="div3 width">
-                <ul>
-                    <li><h2><a href="#">Aide</a></h2></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Mentions legales</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="div4 width">
-                <ul>
-                    <li><h2><a href="presse.html">Presse</a></h2></li>
-                    <li><h2><a href="#">Nos coffrets</a></h2></li>
-                    <li><h2><a href="#">Qui sommes-nous?</a></h2></li>
-                    <li><h2><a href="#">Blog</a></h2></li>
-                </ul>
-            </div>
-        </div>
-        <div class="spacer">
-            <span class="divider"></span>
-        </div>
-        <div class="footerALLright">
-            <div class="allrights">
-                <p>All rights reserved © 2022</p>
-            </div>
-            <div class="icons">
-                <ul>
-                    <li><i class="fa-brands fa-facebook-square fa-xl"></i></i></li>
-                    <li><i class="fa-brands fa-instagram-square fa-xl"></i></i></li>
-                    <li><i class="fa-brands fa-twitter-square fa-xl"></i></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
+    <?php include "includes/footer.php" ?>
+    <!-- script -->
     <script src="js/home.js"></script>
     <script src="js/togglemenu.js"></script>
 </body>

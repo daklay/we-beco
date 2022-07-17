@@ -9,7 +9,7 @@
     background-color: var(--tertiary);
 }
 /* ###########already cart########### */
-.maincheckoutbody{
+.maincheckoutbodyP{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,19 +17,19 @@
     /* background-color: #999999; */
     height: 800px;
 }
-.alreadycart{
+.alreadycartP{
     /* border: 2px solid black; */
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     margin-right: 15px;
     position: relative;
 }
-.cardcontainerall{
+/* .cardcontainerall{
     background-color: #00000070;
     display: flex;
     justify-content: end;
     height: 100vh;
-}
-.cardcontainer{
+} */
+.cardcontainerP{
     background-color: rgb(255, 255, 255);
     width: 380px;
     height: 630px;
@@ -39,7 +39,7 @@
     padding: 0 20px;
     /* border: 2px solid black; */
 }
-.cardcontainer .cardheader{
+.cardcontainerP .cardheaderP{
     min-height: 100px;
     display: flex;
     flex-direction: column;
@@ -48,55 +48,55 @@
     border-bottom: 1px solid black;
     /* background-color: rgb(61, 124, 124); */
 }
-.cardheader .x h2{
+.cardheaderP .xP h2{
     font-weight: 100;
     line-height: 40px;
 }
-.cardheader p{
+.cardheaderP p{
     line-height: 15px;
     color: gray;
     font-size: 14px;
     padding-bottom: 5px;
 }
-.cardcontainer .cardbody{
+.cardcontainerP .cardbodyP{
     height: 400px;
     /* background-color: rgb(123, 179, 179); */
 }
-.cardcontainer .codepromo1{
+.cardcontainerP .codepromo1P{
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translateX(-50%);
     /* transform:translateY(); */
 }
-.cardbody .start{
+.cardbodyP .startP{
     padding-top: 15px;
     width:240px;
 }
-.cardbody .start p:first-child{
+.cardbodyP .startP p:first-child{
     padding-bottom: 5px;
 }
-.cardbody .center{
+.cardbodyP .centerP{
     padding-top: 15px;
 }
-.cardbody .center i{
+.cardbodyP .centerP i{
     color: gray;
     font-size: 13px;
     padding: 3px;
 }
-.center .delet i{
+.centerP .deletP i{
     padding-top: 5px;
     color: gray;
 }
-.cardbody .amount{
+.cardbodyP .amountP{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cardbody .amount p{
+.cardbodyP .amountP p{
     color: rgb(99, 98, 98);
 }
-.cardcontainer .cardfooter{
+.cardcontainerP .cardfooterP{
     min-height: 140px;
     /* position: sticky; */
     /* right: 0; */
@@ -106,40 +106,40 @@
     justify-content: center;
     /* background-color: rgb(61, 124, 124); */
 }
-.cardcontainer .cardfooter .total{
+.cardcontainerP .cardfooterP .totalP{
     display: flex;
     justify-content: space-between;
     border-top: 1px solid black;
     padding-top: 20px;
 }
-.cardbody .productslist li{
+.cardbodyP .productslistP li{
     display: flex;
     /* background-color: #3c5027; */
     justify-content: space-between;
     height: 120px;
     border-bottom: 1px solid gray;
 }
-.cardheader .x{
+.cardheaderP .xP{
     display: flex;
     justify-content: space-between;
 }
-.cardbody .center {
+.cardbodyP .centerP {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 50px;
 }
-.cardbody .productslist li .end{
+.cardbodyP .productslistP li .endP{
     display: flex;
     align-items: center;
     justify-content: end;
     /* background-color: #9E121B; */
-    width: 100px;
+    /* width: 100px; */
 }
-.btncheckoutcard{
+.btncheckoutcardP{
     padding-top: 20px;
 }
-.btncheckoutcard a{
+.btncheckoutcardP a{
     text-decoration: none;
     font-size: 20px;
     background-color: var(--secondary);
@@ -152,14 +152,59 @@
     width: 100%;
     text-align: center;
 }
-.btncheckoutcard a:hover{
+/* .btncheckoutcardP input[type=submit]{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    color: var(--tertiary);
+    border-radius: 30px;
+    transition: ease-in 0.2s;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.btncheckoutcardP input[type=submit]:hover{
+    background-color: var(--tertiary);
+    color: var(--black);
+    border: 1px solid var(--secondary);
+    border-color: var(--color);
+    transition: ease-out 0.4s;
+    cursor: pointer;
+} */
+.btncheckoutcardP a:hover{
     background-color: var(--tertiary);
     color: var(--black);
     border: 1px solid var(--secondary);
     border-color: var(--color);
     transition: ease-out 0.4s;
 }
+.alreadycartP form input{
+    width: 90%;
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+    height: 40px;
+    background-color: #f0f0f0;
+    outline: none;
+    padding-left: 15px;
+}
+.alreadycartP form button{
+    position: absolute;
+    top: 70%;
+    left: 93%;
+    transform: translateX(-93%);
+    height: 40px;
+    width: 100px;
+    border: 1px solid #999999;
+    background-color: #999999;
+    color: white;
+    border-radius: 20px;
+}
+.alreadycartP form button:hover{
+    background-color: #99999998;
+    border: 1px solid #99999998;
 
+}
 
 /* ###########checkout info########### */
 .checkoutinfo{
@@ -214,30 +259,4 @@ form .termscondition{
     border-bottom: 2px solid black;
     width: fit-content;
     margin: 0 0 0 10px;
-}
-.alreadycart form input{
-    width: 90%;
-    border: 1px solid #f0f0f0;
-    border-radius: 20px;
-    height: 40px;
-    background-color: #f0f0f0;
-    outline: none;
-    padding-left: 15px;
-}
-.alreadycart form button{
-    position: absolute;
-    top: 70%;
-    left: 93%;
-    transform: translateX(-93%);
-    height: 40px;
-    width: 100px;
-    border: 1px solid #999999;
-    background-color: #999999;
-    color: white;
-    border-radius: 20px;
-}
-.alreadycart form button:hover{
-    background-color: #99999998;
-    border: 1px solid #99999998;
-
 }

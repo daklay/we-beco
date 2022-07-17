@@ -120,7 +120,7 @@
     width: 300px;/*attention*/
     height: 450px;
     flex-grow: 1;
-    margin: 0 20px;
+    margin: 20px 20px;
     border-radius: 10px;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -141,6 +141,11 @@
     width: 94%;
     background-color: #7e7b7c;
     border-radius: 10px;
+    background-image: url(../images/pcaccessories2.jpg);
+    /* background-image: url(../images/pcaccessories1.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .linecontainerblogcard .blogdate{
     position: absolute;
@@ -162,6 +167,9 @@
 .linecontainerblogcard .textcontent h3{
     font-size:x-large;
     line-height: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .linecontainerblogcard .textcontent p{
     line-height: 19px;
@@ -204,6 +212,7 @@
     }
     .linecontainerblogcard{
         padding: 20px 0px;
+        flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 1279px){

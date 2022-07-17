@@ -1,7 +1,7 @@
-filterSelection("reviews");
+filterSelection("footerproductpageAll");
 function filterSelection(e){
     var x,i;
-    x = document.getElementsByClassName("espacesubpages");
+    x = document.getElementsByClassName("hide");
     for(i=0; i<x.length; i++){
         removeClass(x[i], "show");
         if(x[i].className.indexOf(e) > -1) {addClass(x[i], "show")};
@@ -25,11 +25,11 @@ function removeClass(element, name){
 
 
 // var btnContainer = document.getElementById("navlistespace");
-var btns = document.getElementsByClassName("btnact");
+var btns = document.getElementsByClassName("btnactP");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("activeProductNav");
+    current[0].className = current[0].className.replace(" activeProductNav", "");
+    this.className += " activeProductNav";
   });
 }

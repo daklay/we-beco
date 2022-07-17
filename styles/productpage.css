@@ -30,16 +30,15 @@
     /* height: 200px; */
     margin-bottom: 40px;
 }
-.imageheaderproduct{
+/* .imageheaderproduct{
     background-color: var(--tertiary);
-    background-image: url(/images/new4.png);
+    background-image: url(../images/new4.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
-    /* width: 600px; */
     width: 50%;
     height: 500px;
-}
+} */
 .productsnextimageinfo{
     /* background-color: rgb(37, 70, 142); */
     width: calc(100% - 50%);
@@ -190,7 +189,7 @@
     height: 3px;
     background-color: var(--secondary);
 }
-.bodyproductpage .active::after{
+.bodyproductpage .activeProductNav::after{
     content: '';
     position: absolute;
     left: 0;
@@ -227,7 +226,7 @@
     height: 250px;
     width: 280px;
     background-color: var(--tertiary);
-    background-image: url(/images/4-2.png);
+    background-image: url(../images/4-2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
@@ -300,4 +299,80 @@
     .footerproductpage .largeproductdescription{
         width: 100%;
     }
+}
+
+/* ##### comments section ######## */
+.footerproductpagereviewsAll{
+    width: 100%;
+}
+.footerproductpagereviews{
+    width: 100%;
+}
+.hide{
+    display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.show{
+    display: flex;
+}
+.show_hide_container{
+    position: relative;
+    /* background-color: red; */
+    height:600px;
+}
+.footerproductpagereviews .commentsecion form{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerproductpagereviews .commentsecion form input[type=text]{
+    border-radius: 5px;
+    border: 2px solid grey;
+    width: 80%;
+}
+.footerproductpagereviews .commentsecion form input[type=submit]{
+    width: 15%;
+    background-color: var(--secondary);
+    color: white;
+    border: 2px solid var(--secondary);
+    transition: ease 0.5s;
+    border-radius: 5px;
+}
+.footerproductpagereviews .commentsecion form input[type=submit]:hover{
+    background-color: white;
+    color:#9E121B;
+}
+.footerproductpagereviews input{
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+
+.commentsecion .oldcomments{
+    background-color: rgb(251, 229, 201);
+    padding: 13px;
+    margin: 13px;
+}
+.commentsecion .oldcomments .name_stars_reviews{
+    /* background-color: rgb(42, 205, 151); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 0 0 9px 0;
+}
+.commentsecion .oldcomments .name_stars_reviews i{
+    color: goldenrod;
+}
+.commentsecion .oldcomments .comment_reviews{
+    /* background-color: rgb(24, 98, 98); */
+    font-weight: 100;
+    padding: 0 0 9px 0;
+}
+.commentsecion .oldcomments .date_reviews{
+    /* background-color: rgb(71, 113, 199); */
+    font-size: 14px;
+    color: grey;
 }

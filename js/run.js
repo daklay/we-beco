@@ -16,11 +16,15 @@ signInButton.addEventListener('click', () => {
 const open = document.getElementById('open')
 const closee = document.getElementById('btnaccount')
 let elemnt = document.getElementById('accountcon')
-open.addEventListener("click", ()=>{
-    // body.appendChild(elemnt);
-    body.insertBefore(elemnt, cartt);
-    elemnt.style.opacity = '1'
-})
+// ! add condition
+if(open.children[0].getAttribute('href') == '#'){
+    open.addEventListener("click", ()=>{
+        // body.appendChild(elemnt);
+        body.insertBefore(elemnt, cartt);
+        elemnt.style.opacity = '1'
+    })
+}
+
 closee.addEventListener("click", ()=>{
     body.removeChild(elemnt)
 })

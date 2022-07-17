@@ -1,0 +1,89 @@
+/* ##############################newsletter section ###################################### */
+.newslettercontainer{
+    background-color: var(--tertiary);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletterall{
+    height: 250px;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletterall .leftside{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .newsletterall .leftside .formnewsletter{
+    display: flex;
+    flex-direction: column;
+} */
+.leftside .text h2{
+    font-size: 20px ;
+    /* text-align: center; */
+    padding: 0 0 10px 0;
+}
+.formnewsletter form{
+    height: 150px;
+    /* background-color:#129e20; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.formnewsletter button{
+    text-decoration: none;
+    font-size: 20px;
+    /* font-size: clamp(20px, 2.5vw, 22px); */
+    /* line-height: 30px; */
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    padding: 10px 0px;
+    color: var(--tertiary);
+    transition: ease-in 0.2s;
+}  
+.formnewsletter button:hover{
+    background-color: var(--tertiary);
+    color: var(--black);
+    border: 1px solid var(--secondary);
+    border-color: var(--color);
+    transition: ease-out 0.4s;
+    cursor: pointer;
+}
+.formnewsletter form input{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px 7px;
+}
+.formnewsletter form button{
+    width: 100%;
+}
+.formnewsletter ::placeholder {
+    color: #9E121B;
+    opacity: 1; /* Firefox */
+    padding-left: 15px;
+}
+@media screen and (max-width: 1279px){
+    .newsletterall{
+        width: 900px;
+    }
+    .newslettercontainer{
+        height: 450px; 
+    }
+}
+@media screen and (max-width: 1023px){
+    .newsletterall{
+        width: 800px;
+    }
+    .newsletterall .text h2{
+        font-size: 30px;
+        padding: 0 0 5px 0;
+    }
+}
