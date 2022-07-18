@@ -59,7 +59,8 @@
 .cardscontainer{
     /* background-color: palevioletred; */
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     /* align-items: center; */
 }
 .cardscontainer .card1{
@@ -67,6 +68,7 @@
     background-color: var(--primary);
     width: 380px;
     height: 272px;
+    margin: 0 auto 30px auto;
     border-radius: 10px;
     padding: 5px;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */

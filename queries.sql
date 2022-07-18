@@ -105,3 +105,10 @@ CREATE TABLE blog(
     PRIMARY KEY(id),
     FOREIGN KEY(author_admin) REFERENCES admins(id)
 )
+CREATE TABLE supplier(
+	id int(30) AUTO_INCREMENT,
+    logo_sup varchar(50),
+    name_sup varchar(40),
+    description varchar(500),
+    PRIMARY KEY(id)
+)

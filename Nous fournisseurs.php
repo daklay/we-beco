@@ -1,3 +1,8 @@
+<?php 
+    include "dbclass.php";
+    $getSuppliersobj = new suppliers();
+    $getSuppliers = $getSuppliersobj->getSuppliers();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,80 +38,24 @@
     <!-- supplier body card -->
     <div class="supplierbodycard">
         <div class="cardscontainer">
-            <div class="card1">
-                <div class="face front">
-                    <div class="suppimage"><img src="images/brands/1.png" alt="err" width="100%"></div>
-                    <h3>Lenovo</h3>
-                    <p>hover to see more</p>
-                </div>
-                <div class="face back">
-                    <!-- <div class="suppimage"><img src="images/brands/1.png" alt="err" width="100%"></div> -->
-                    <h3>Lenovo</h3>
-                    <p>Lenovo est une entreprise chinoise fabriquant principalement des ordinateurs, téléphones, stations de travail, serveurs informatiques et télévisions connectées. Fondée en 1984 par Liu Chuanzhi, la marque s'est fait connaitre mondialement en 2005 lorsqu'elle a racheté la division informatique personnelle d'IBM, devenant ainsi le premier constructeur mondial de PC2.</p>
-                </div>
-            </div>
-            <div class="card1">
-                <div class="face front">
-                    <div class="suppimage"><img src="images/brands/2.png" alt="err" width="100%"></div>
-                    <h3>Lenovo</h3>
-                    <p>hover to see more</p>
-                </div>
-                <div class="face back">
-                    <!-- <div class="suppimage"><img src="images/brands/2.png" alt="err" width="100%"></div> -->
-                    <h3>Asus</h3>
-                    <p>est une entreprise taïwanaise qui produit des cartes mères, des cartes graphiques, des lecteurs optiques, des assistants personnels, des ordinateurs portables, des ordinateurs de bureau, des périphériques réseau, des téléphones portables, des boîtiers et des systèmes de refroidissement d’ordinateurs.</p>
-                </div>
-            </div>
-            <div class="card1">
-                <div class="face front">
-                    <div class="suppimage"><img src="images/brands/3.png" alt="err" width="100%"></div>
-                    <h3>Ryzen</h3>
-                    <p>hover to see more</p>
-                </div>
-                <div class="face back">
-                    <!-- <div class="suppimage"><img src="images/brands/3.png" alt="err" width="100%"></div> -->
-                    <h3>Lenovo</h3>
-                    <p>Ryzen désigne le nom d'une famille de microprocesseurs de la marque AMD, implémentant la microarchitecture Zen.</p>
-                </div>
-            </div>
-        </div>
-        <div class="cardscontainer">
-            <div class="card1">
-                <div class="face front">
-                    <div class="suppimage"><img src="images/brands/4.png" alt="err" width="100%"></div>
-                    <h3>Dell</h3>
-                    <p>hover to see more</p>
-                </div>
-                <div class="face back">
-                    <!-- <div class="suppimage"><img src="images/brands/4.png" alt="err" width="100%"></div> -->
-                    <h3>Dell</h3>
-                    <p>Dell Technologies, Inc est une entreprise américaine troisième plus grand constructeur d'ordinateurs au monde en 2012 derrière Hewlett-Packard et Lenovo2. Son siège est basé à Round Rock dans l'État du Texas. Même si Dell Computer est surtout connu pour les PC qu'il conçoit, fabrique et vend aux particuliers et aux professionnels</p>
-                </div>
-            </div>
-            <div class="card1">
-                <div class="face front">
-                    <div class="suppimage"><img src="images/brands/5.png" alt="err" width="100%"></div>
-                    <h3>Hp</h3>
-                    <p>hover to see more</p>
-                </div>
-                <div class="face back">
-                    <!-- <div class="suppimage"><img src="images/brands/5.png" alt="err" width="100%"></div> -->
-                    <h3>Hp</h3>
-                    <p>HP Inc.3 est l'une des deux entités résultant de la scission le 31 octobre 2015, de la société historique Hewlett-Packard dont le nom était celui de ses 2 fondateurs .</p>
-                </div>
-            </div>
-            <div class="card1">
-                <div class="face front">
-                    <div class="suppimage"><img src="images/brands/6.png" alt="err" width="100%"></div>
-                    <h3>Toshiba</h3>
-                    <p>hover to see more</p>
-                </div>
-                <div class="face back">
-                    <!-- <div class="suppimage"><img src="images/brands/6.png" alt="err" width="100%"></div> -->
-                    <h3>Toshiba</h3>
-                    <p>Toshiba Corporation est un fabricant japonais de matériel électronique et informatique. C'est le plus grand fabricant de semi-conducteurs du Japon. En 2009, la société est le troisième fabricant mondial de semi-conducteurs, derrière Intel et Samsung, mais devant STMicroelectronics.</p>
-                </div>
-            </div>
+            <?php 
+                foreach($getSuppliers as $s){
+                    ?>
+                        <div class="card1">
+                            <div class="face front">
+                                <div class="suppimage"><img src="<?php echo $s['logo_sup'];?>" alt="err" width="100%"></div>
+                                <h3><?php echo $s['name_sup'];?></h3>
+                                <p>hover to see more</p>
+                            </div>
+                            <div class="face back">
+                                <!-- <div class="suppimage"><img src="images/brands/1.png" alt="err" width="100%"></div> -->
+                                <h3><?php echo $s['name_sup'];?></h3>
+                                <p><?php echo $s['description'];?></p>
+                            </div>
+                        </div>                    
+                    <?php 
+                }
+            ?>
         </div>
     </div>
     <!-- footer -->

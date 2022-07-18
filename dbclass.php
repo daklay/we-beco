@@ -297,6 +297,15 @@ class packs extends db{
     }
 }
 
+class suppliers extends db{
+    public function getSuppliers(){
+        $sql = "SELECT * FROM supplier";
+        $stmt = $this->connect()->query($sql);
+        $res = $stmt->fetchAll();
+        return $res;
+    }
+}
+
 
 
 
