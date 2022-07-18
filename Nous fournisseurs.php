@@ -1,5 +1,6 @@
 <?php 
     include "dbclass.php";
+    $nousfournisseurs = "activeheader";
     $getSuppliersobj = new suppliers();
     $getSuppliers = $getSuppliersobj->getSuppliers();
 ?>

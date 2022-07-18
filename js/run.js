@@ -29,3 +29,28 @@ closee.addEventListener("click", ()=>{
     body.removeChild(elemnt)
 })
 body.removeChild(elemnt)
+
+
+
+// header active element header
+// const elem = document.getElementsByClassName("navaelmnt");
+
+// [...elem].forEach((elmnt)=>{
+//     elmnt.addEventListener("click", (e)=>{
+//         if(!elmnt.classList.contains("activeheader")){
+//             elmnt.classList.add("activeheader");
+//         }
+//     })
+
+// })
+// function sidebar(classs){
+//     let sidebarr = document.getElementsByClassName('nav-link');
+//     [...sidebarr].forEach(el=>{
+//       if(el.classList.contains(classs)){
+//         el.classList.add("active");
+//       }
+//       else{
+//         el.classList.remove("active");
+//       }
+//     })
+//  }

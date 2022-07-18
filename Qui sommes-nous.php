@@ -1,3 +1,6 @@
+<?php 
+    $quisommesnous = "activeheader";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

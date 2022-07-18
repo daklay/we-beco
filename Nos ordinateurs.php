@@ -1,6 +1,7 @@
 <?php
     session_start();
     include "dbclass.php";
+    $nosordinateur = "activeheader";
     $obj1 = new test();
     $categories =$obj1->getCat();
     $obj2 = new test();

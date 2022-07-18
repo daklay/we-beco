@@ -1,5 +1,6 @@
 <?php 
     include "dbclass.php";
+    $noscoffrets = "activeheader";
     $getPacksobj = new packs();
     $getPacks = $getPacksobj->getPacks();
 ?>

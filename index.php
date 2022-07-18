@@ -1,6 +1,8 @@
 <?php
     session_start();
     include "dbclass.php";
+    $index = "activeheader";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +18,7 @@
     <script src="jquery/jquery-3.6.0.min.js"></script>
     <script src="js/addtocartajx.js" defer></script>
     <script src="js/loginvalidation.js" defer></script>
+    <script src="js/countdown.js" defer></script>
     <link rel="stylesheet" href="styles/index.css">
     <title>OrdiShop - Maroc</title>
 </head>

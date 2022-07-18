@@ -473,6 +473,9 @@
     width: 100%;
 
 }
+.navlist .activeheader::after{
+    width: 100%;
+}
 @media screen and (max-width: 1279px){
     .navbar {
         padding: 0px 40px;
