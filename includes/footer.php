@@ -11,26 +11,26 @@
         </div>
         <div class="div2 width">
             <ul>
-                <li><h2><a href="#">Nos ordinateurs</a></h2></li>
-                <li><a href="#">Nos ordinateurs de bureau</a></li>
-                <li><a href="#">Mini PC</a></li>
-                <li><a href="#">Ordinateurs protables</a></li>
+                <li><h2><a href="Nos ordinateurs.php">Nos ordinateurs</a></h2></li>
+                <li><a href="Nos%20ordinateurs.php?categorie=pcbureau">Nos ordinateurs de bureau</a></li>
+                <li><a href="Nos%20ordinateurs.php?categorie=pcgamer">Mini PC</a></li>
+                <li><a href="Nos%20ordinateurs.php?categorie=pcportable">Ordinateurs protables</a></li>
             </ul>
         </div>
         <div class="div3 width">
             <ul>
-                <li><h2><a href="#">Aide</a></h2></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Mentions legales</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><h2><a href="Qui sommes-nous.php">Aide</a></h2></li>
+                <li><a href="Qui sommes-nous.php">FAQ</a></li>
+                <li><a href="legal.php">Mentions legales</a></li>
+                <li><a href="contactus.php">Contact</a></li>
             </ul>
         </div>
         <div class="div4 width">
             <ul>
-                <li><h2><a href="presse.html">Presse</a></h2></li>
-                <li><h2><a href="#">Nos coffrets</a></h2></li>
-                <li><h2><a href="#">Qui sommes-nous?</a></h2></li>
-                <li><h2><a href="#">Blog</a></h2></li>
+                <li><h2><a href="presse.php">Presse</a></h2></li>
+                <li><h2><a href="Nos coffrets.php">Nos coffrets</a></h2></li>
+                <li><h2><a href="Qui sommes-nous.php">Qui sommes-nous?</a></h2></li>
+                <li><h2><a href="Blog.php">Blog</a></h2></li>
             </ul>
         </div>
     </div>

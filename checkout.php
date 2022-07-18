@@ -5,6 +5,17 @@
     if(!isset($user_id)){
         header('location:index.php');
     }
+    $getUserobj = new register_login();
+    $getUser = $getUserobj->getUser($user_id);
+    foreach($getUser as $u){
+        $name = $u['nom'];
+        $prenom = $u['prenom'];
+        $codepostal = $u['codepostal'];
+        $adresseLiv = $u['adresseLiv'];
+        $tele = $u['tele'];
+        $email = $u['email'];
+        $contry = $u['contry'];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +84,7 @@
                         <!-- <form action="">
                             <input type="submit" value="CONFIRM">
                         </form> -->
-                        <a href="#" id="confirm">CONFIRM</a>
+                        <a href="thankyoupage.php" id="confirm">CONFIRM</a>
                     </div>
                 </div>
             </div>
@@ -83,22 +94,22 @@
                 <h3>Personal Information</h3>
                 <form action="">
                     <div>
-                        <input type="text" placeholder="votre Nom">
-                        <input type="text" placeholder="votre Prenom" id="prenom">
+                        <input type="text" placeholder="votre Nom" value="<?php echo $name ?>">
+                        <input type="text" placeholder="votre Prenom*" id="prenom" value="<?php echo $prenom ?>">
                     </div>
                     <div>
                         <input type="text" placeholder="company">
-                        <input type="email" placeholder="email">
+                        <input type="email" placeholder="email" value="<?php echo $email ?>">
                     </div>
                     <div>
-                        <input type="text" placeholder="pays" id="country">
-                        <input type="number" placeholder="code postal" id="codepostal">
+                        <input type="text" placeholder="pays*" id="country" value="<?php echo $contry ?>">
+                        <input type="number" placeholder="code postal*" id="codepostal" value="<?php echo $codepostal ?>">
                     </div>
                     <div>
-                        <input type="text" placeholder="adresse" id="adresse">
+                        <input type="text" placeholder="adresse*" id="adresse" value="<?php echo $adresseLiv ?>">
                     </div>
                     <div>
-                        <input type="text" placeholder="numero de telephone" id="tele">
+                        <input type="text" placeholder="numero de telephone*" id="tele" value="<?php echo $tele ?>">
                     </div>
                 </form>
             </div>

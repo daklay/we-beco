@@ -16,12 +16,13 @@
         $country = $_POST['countryv'];
 
         $updateuser = $updateuserobj->updateUserCheckout($prenom, $codepostal, $adresse, $tele, $country, $user_id);
-        $cartproduct = $cartproductsobj->getCartProduct($user_id);
+        // $cartproduct = $cartproductsobj->getCartProduct($user_id);
+        $cartproduct = $cartproductsobj->getCartProductNOtCommender($user_id);
         foreach($cartproduct as $c){
-            $commande = $commandeobj->insertC($user_id, $totalprice, date("Y-m-d"), "encour");
+            // $commande = $commandeobj->insertC($user_id, $totalprice, date("Y-m-d"), "encour");
+            $commande = $commandeobj->insertC($c['product_id'],$user_id, $totalprice, date("Y-m-d"), "encour");
             $cartstatus = $cartstatusobj->updateStatus($c['product_id']);
         }
-        header('location:thankyoupage.php');
     }
     
 ?>

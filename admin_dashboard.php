@@ -215,6 +215,7 @@ if(isset($_POST['updateproduct'])){
                 <th>id</th>
                 <th>nom</th>
                 <th>tele</th>
+                <th>date de commande</th>
                 <th>status</th>
               </tr>
           </thead>
@@ -227,6 +228,7 @@ if(isset($_POST['updateproduct'])){
                     <td><?php echo $v['idc']?></td>
                     <td><?php echo $v['nom']?></td>
                     <td><?php echo $v['tele']?></td>
+                    <td><?php echo $v['command_date']?></td>
                     <td>
                       <select name="statusupdate" class="statusupdate" id="status">
                         <option value="<?php echo $v['etape']?>"><?php echo $v['etape']?></option>

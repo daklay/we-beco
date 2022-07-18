@@ -21,7 +21,7 @@
     <div class="thanks">
         <div class="thank_you_page"></div>
         <h2>Thank you your order successfully been placed</h2>
-        <a href="#" target="_blank">home</a>
+        <a href="index.php" target="_blank">home</a>
     </div>
 </body>
 </html>

@@ -30,15 +30,15 @@
     /* height: 200px; */
     margin-bottom: 40px;
 }
-/* .imageheaderproduct{
+.imageheaderproduct{
     background-color: var(--tertiary);
-    background-image: url(../images/new4.png);
+    /* background-image: url(../images/new4.png); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
     width: 50%;
     height: 500px;
-} */
+}
 .productsnextimageinfo{
     /* background-color: rgb(37, 70, 142); */
     width: calc(100% - 50%);
@@ -287,6 +287,9 @@
     }
     .footerproductpage .overviewproductimg{
         justify-content: center;
+    }
+    .show_hide_container{
+        height: 1500px !important;
     }
 }
 @media screen and (max-width :820px){

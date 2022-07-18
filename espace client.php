@@ -114,7 +114,7 @@
                                     foreach($commandtable as $t){
                                         ?>
                                             <tr>
-                                                <td><a href="productpage.php?product_id=<?php echo $t['product_id']?>"><?php echo $t['name'] ?></a></td>
+                                                <td><a href="productpage.php?product_id=<?php echo $t['product_id']?>"><?php echo $t['product_name'] ?></a></td>
                                                 <td><?php echo $t['command_date'] ?></td>
                                                 <td><?php echo $t['etape'] ?></td>
                                             </tr>

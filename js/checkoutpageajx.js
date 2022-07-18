@@ -6,7 +6,7 @@ let codepostal = document.getElementById("codepostal");
 let total = document.getElementsByClassName("totalP")[0];
 $(document).ready(()=>{
     $("#confirm").click((e)=>{
-        e.preventDefault();
+        // e.preventDefault();
         let prenomv = prenom.value;
         let adressev = adresse.value;
         let telev = tele.value;

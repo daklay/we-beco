@@ -229,13 +229,18 @@ class comments extends db{
     }
 }
 class commande extends db{
-    public function insertC($userId, $prix, $commanddate, $etap){
-        $sql = "INSERT INTO commande(users_id, prix, command_date, etape) VALUES(?,?,?,?)";
+    // public function insertC($userId, $prix, $commanddate, $etap){
+    //     $sql = "INSERT INTO commande(users_id, prix, command_date, etape) VALUES(?,?,?,?)";
+    //     $stmt = $this->connect()->prepare($sql);
+    //     $stmt->execute([$userId, $prix, $commanddate, $etap]);
+    // }
+    public function insertC($product_id,$userId, $prix, $commanddate, $etap){
+        $sql = "INSERT INTO commande(product_id,users_id, prix, command_date, etape) VALUES(?,?,?,?,?)";
         $stmt = $this->connect()->prepare($sql);
-        $stmt->execute([$userId, $prix, $commanddate, $etap]);
+        $stmt->execute([$product_id, $userId, $prix, $commanddate, $etap]);
     }
     public function getCommande($userId){
-        $sql = "SELECT * FROM commande INNER JOIN cart on commande.users_id = cart.user_id  WHERE users_id = ?";
+        $sql = "SELECT * FROM commande INNER JOIN products on commande.product_id = products.id WHERE user_id = ?";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$userId]);
         $res = $stmt->fetchAll();
@@ -262,7 +267,7 @@ class admin_dashboard extends db{
     }
     #commandes
     public function getCommande_admin(){
-        $sql = "SELECT *,commande.id as idc FROM commande INNER JOIN users on users.id = commande.users_id";
+        $sql = "SELECT *,commande.id as idc FROM commande INNER JOIN users on users.id = commande.user_id";
         $stmt = $this->connect()->query($sql);
         $res = $stmt->fetchAll();
         return $res;
@@ -305,7 +310,14 @@ class suppliers extends db{
         return $res;
     }
 }
-
+class press extends db{
+    public function getPress(){
+        $sql = "SELECT * FROM press";
+        $stmt = $this->connect()->query($sql);
+        $res = $stmt->fetchAll();
+        return $res;
+    }
+}
 
 
 

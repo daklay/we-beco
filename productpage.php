@@ -48,14 +48,7 @@ $getrev1 = $objgetrev1->getCommentsByProduct_Id($_GET['product_id']);
 <body>
     <style>
         .imageheaderproduct{
-            background-color: var(--tertiary);
             background-image: url(./<?php echo $image ?>);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 90%;
-            /* width: 600px; */
-            width: 50%;
-            height: 500px;
         }
     </style>
     <div id="alert1">

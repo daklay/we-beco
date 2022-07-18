@@ -112,3 +112,11 @@ CREATE TABLE supplier(
     description varchar(500),
     PRIMARY KEY(id)
 )
+CREATE TABLE press(
+	id int(50) AUTO_INCREMENT,
+    press_img varchar(50),
+    press_title varchar (40),
+    press_htitle varchar (100),
+    press_date varchar (30),
+    PRIMARY KEY(id)
+)
