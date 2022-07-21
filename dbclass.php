@@ -235,7 +235,7 @@ class commande extends db{
     //     $stmt->execute([$userId, $prix, $commanddate, $etap]);
     // }
     public function insertC($product_id,$userId, $prix, $commanddate, $etap){
-        $sql = "INSERT INTO commande(product_id,users_id, prix, command_date, etape) VALUES(?,?,?,?,?)";
+        $sql = "INSERT INTO commande(product_id,user_id, prix, command_date, etape) VALUES(?,?,?,?,?)";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute([$product_id, $userId, $prix, $commanddate, $etap]);
     }

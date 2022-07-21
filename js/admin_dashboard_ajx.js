@@ -23,11 +23,12 @@
 // // }
 
 $(document).ready(()=>{
-    $("#updateCommande").click(()=>{
+    $(".updateCommande").click(()=>{
         var action = "updateCommande";
         var selectvalajx = selectval;
         var command_id = commndid;
         // selectval = "test";
+        alert(action)
         $.ajax({
             url : "adminaction.php",
             method : "POST",

@@ -1,7 +1,7 @@
 <?php 
     include "dbclass.php";
-    // echo $_POST['selectvalajx'];
-    // echo $_POST['command_id'];
+    echo $_POST['selectvalajx'];
+    echo $_POST['command_id'];
 
 if(isset($_POST['action'])){
   
@@ -11,5 +11,4 @@ if(isset($_POST['action'])){
     // echo "test";
 
 }
-
 ?>

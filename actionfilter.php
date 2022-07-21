@@ -17,7 +17,7 @@
 
         if(isset($_POST['price'])){
             $price = implode("','", $_POST['price']);
-            $sql .= "AND price >= ".$price."";
+            $sql .= "AND price <= ".$price."";
         }
         $res = $pdo->query($sql);
 

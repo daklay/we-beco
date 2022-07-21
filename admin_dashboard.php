@@ -236,7 +236,7 @@ if(isset($_POST['updateproduct'])){
                         <option value="livree">livree</option>
                       </select>
                     </td>
-                    <td><a href="#tab2" id="updateCommande" class="updatebutton">update</a></td>
+                    <td><a href="#tab2" id="updateCommande" class="updateCommande updatebutton">update</a></td>
                   </tr>
                   <?php
                 }
